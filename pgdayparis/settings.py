@@ -4,7 +4,7 @@ DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 DATABASES = {
-	'default':{
+    'default':{
         'ENGINE':'django.db.backends.postgresql_psycopg2', # '.postgresql_psycopg2', '.mysql', or '.oracle'
         'NAME':'pgdayparis2015', # Required to be non-empty string
         'USER':'postgres', # Required to be non-empty string
@@ -42,7 +42,7 @@ USE_I18N = False
 
 STATIC_URL = '/media/'
 STATICFILES_DIRS = (
-	'../media/',
+    '../media/',
 )
 
 # Make this unique, and don't share it with anybody.
@@ -57,34 +57,44 @@ TEMPLATE_LOADERS = (
 )
 
 MIDDLEWARE_CLASSES = (
-    'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-	'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
+
+WSGI_APPLICATION = 'wsgi.application'
 
 ROOT_URLCONF = 'urls'
 
 TEMPLATE_DIRS = (
-	'../templates',
+    '../templates',
 )
 
 INSTALLED_APPS = (
-	'django.contrib.auth',
+    'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',
-	'django.contrib.admin',
-	'django.contrib.staticfiles',
-	'base',
+    'django.contrib.admin',
+    'django.contrib.staticfiles',
+    'base',
 )
 
 DATETIME_FORMAT="Y-m-d H:i:s"
 # If there is a local_settings.py, let it override our settings
 try:
-	from local_settings import *
+    from local_settings import *
 except:
-	pass
+    pass
 
 
 DEBUG = True
+
+# Honor the 'X-Forwarded-Proto' header for request.is_secure()
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+# Allow all host headers
+ALLOWED_HOSTS = ['*']

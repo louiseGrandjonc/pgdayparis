@@ -3,7 +3,6 @@
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
-"""
 # Developpment database.
 DATABASES = {
     'default':{
@@ -15,7 +14,6 @@ DATABASES = {
         'PORT':'', # Set to empty string for default.
     },
 }
-"""
 
 # Heroku database
 

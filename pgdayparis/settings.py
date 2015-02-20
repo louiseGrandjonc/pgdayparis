@@ -39,10 +39,16 @@ USE_I18N = False
 # trailing slash if there is a path component (optional in other cases).
 # Examples: "http://media.lawrence.com", "http://example.com/media/"
 #MEDIA_URL = '/media/'
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/1.6/howto/static-files/
 
-STATIC_URL = '/media/'
+
+# Static asset configuration
+STATIC_ROOT = 'static'
+
+STATIC_URL = '/static/'
 STATICFILES_DIRS = (
-    '../media/',
+    './files/',
 )
 
 # Make this unique, and don't share it with anybody.
@@ -50,11 +56,6 @@ SECRET_KEY = 'zya5w8sfr)i(7q^p3750-3hk5&4=9(&z6+*1x!#lt#8h%!sizu'
 
 # List of callables that know how to import templates from various sources.
 
-TEMPLATE_LOADERS = (
-    'django.template.loaders.filesystem.Loader',
-    'django.template.loaders.app_directories.Loader',
-    #'django.template.loaders.eggs.Loader',
-)
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -65,12 +66,12 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-WSGI_APPLICATION = 'wsgi.application'
+WSGI_APPLICATION = 'pgdayparis.wsgi.application'
 
-ROOT_URLCONF = 'urls'
+ROOT_URLCONF = 'pgdayparis.urls'
 
 TEMPLATE_DIRS = (
-    '../templates',
+    './templates',
 )
 
 INSTALLED_APPS = (
@@ -80,7 +81,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.admin',
     'django.contrib.staticfiles',
-    'base',
+    'pgdayparis',
 )
 
 DATETIME_FORMAT="Y-m-d H:i:s"

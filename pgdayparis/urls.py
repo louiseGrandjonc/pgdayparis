@@ -4,13 +4,13 @@ from django.conf.urls import patterns, url, include
 from django.contrib import admin
 admin.autodiscover()
 
-from base.feeds import NewsFeed
+from pgdayparis.base.feeds import NewsFeed
 
 urlpatterns = patterns('',
-	(r'^$', 'base.views.index'),
+	(r'^$', 'pgdayparis.base.views.index'),
 
     (r'^news.rss$', NewsFeed()),
-    (r'^news.json$', 'base.views.newsjson'),
+    (r'^news.json$', 'pgdayparis.base.views.newsjson'),
 
     # This will never happen in production, handled by webserver
 	(r'^files/(.*)$', 'django.views.static.serve', {
@@ -24,5 +24,5 @@ urlpatterns = patterns('',
 	(r'^admin/', include(admin.site.urls)),
 
     # Static pages for everything else
-    (r'^(.*)/$', 'base.views.static_fallback'),
+    (r'^(.*)/$', 'pgdayparis.base.views.static_fallback'),
 )

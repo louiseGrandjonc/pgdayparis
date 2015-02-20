@@ -1,3 +1,5 @@
+{% load staticfiles %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +10,7 @@
 	<meta name="author" content="PostgreSQL Paris">
 	<title>{%block title%}{%endblock%}{%block titlesuffix%} - PostgreSQL Conference Paris 2015{%endblock%}</title>
 
-  <link href="{{mediabase|default:"http://pgday.paris/"}}files/css/home.css" rel="stylesheet">
+  <link href="{% static "css/home.css" %}" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 
@@ -21,7 +23,7 @@
       <div class="container-fluid">
         <div class="brand">
           <a class="fl-logo" href="http://pgday.paris">
-            <img class="img svg" id="logo-header" src="{{mediabase|default:"http://pgday.paris/"}}files/img/logos/pgdayparis.svg" height="50">
+            <img class="img svg" id="logo-header" src="{% static "img/logos/pgdayparis.svg" %}" height="50">
             <strong>PGDayParis</strong>
           </a>
         </div>
@@ -55,7 +57,7 @@
               <ul>
                 <li>
                   <a class="fl-logo" href="http://felynx.com">
-                    <img class="img svg" id="logo-footer" src="{{mediabase|default:"http://pgday.paris/"}}files/img/logos/pgdayparis.svg" height="50">
+                    <img class="img svg" id="logo-footer" src="{% static "img/logos/pgdayparis.svg" %}" height="50">
                     <strong>PGDayParis</strong>
                   </a>
                 </li>

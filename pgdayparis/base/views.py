@@ -9,7 +9,7 @@ import simplejson as json
 import markdown
 from datetime import datetime
 
-from models import *
+from pgdayparis.base.models import *
 
 # from templateextra import context_template_additions
 

@@ -1,6 +1,6 @@
 from django.contrib.syndication.views import Feed
 
-from models import News
+from pgdayparis.base.models import News
 
 from datetime import datetime, time
 

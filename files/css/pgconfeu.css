@@ -1,0 +1,558 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	background: url(../img/promo/promoheader.jpg) no-repeat center top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	font-size: 20px;
+}
+
+.panel-heading h4 {
+	padding-top:5px;
+	color: #616161;
+}
+
+.abstract {
+	margin-top: 20px;
+}
+
+.intro {
+	margin-top: 75px;
+	color: #0e0e0e;
+	vertical-align: middle;
+}
+
+.content {
+	background-color: #eeeeee;
+	font-size: 17px;
+	color: #616161;
+}
+
+body h1 {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+	text-align: center;
+	color: #fafafa;
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+body h3 {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+	text-align: center;
+}
+
+body h4 {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.intro h3 {
+	color: #fafafa;
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.fluid-container {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.bottom {
+	margin-bottom: 40px;
+}
+
+@media(max-width:994px) {
+	.images {
+		display: none;
+	}
+
+	.map {
+		height: 250px;
+	}
+
+	.heading h1 {
+		font-size: 50px;
+		margin-top: 120px;
+	}
+
+	.anchor {
+		display: block;
+		height: 90px;
+		margin-top: -90px;
+		visibility: hidden;
+	}
+
+	.footer {
+		font-size: 12px;
+	}
+
+	#pgeubase div .regleft {
+		width: 350px;
+		float: left;
+	}
+}
+
+@media(max-width:767px) {
+
+	.heading h1 {
+		font-size: 35px;
+		margin-top: 70px;
+	}
+
+	.footer {
+		font-size: 12px;
+	}
+
+	.footer, .page-wrap:after {
+		height: 250px;
+	}
+
+	.page-wrap {
+		min-height: 100%;
+		margin-bottom: -250px;
+	}
+
+	.airport-image {
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	#pgeubase div .regleft {
+		width: 325px;
+		float: left;
+	}
+}
+
+@media(min-width:767px) {
+	.footer, .page-wrap:after {
+		height: 120px;
+	}
+
+	.page-wrap {
+		min-height: 100%;
+		margin-bottom: -120px;
+	}
+}
+
+@media(min-width:994px) {
+	.map {
+		height: 500px;
+	}
+
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
+
+    body .intro h1 {
+        font-size: 75px;
+    }
+
+	.heading h1 {
+		font-size: 50px;
+		margin-top: 70px;
+	}
+
+	body h3 {
+		font-size: 35px;
+	}
+
+	body h4 {
+		padding-top: 25px;
+	}
+
+	h3 .fa {
+		vertical-align: middle;
+	}
+
+	.footer h5 {
+		font-size: 16px;
+	}
+
+	.footer {
+		font-size: 12px;
+	}
+
+    .intro-text {
+        font-size: 25px;
+    }
+
+	.content {
+		margin-top:30px;
+	}
+}
+
+.sponsor-col a:link { color: #616161; }
+.sponsor-col a:visited { color: #616161; }
+.sponsor-col a:hover { color: #616161; }
+.sponsor-col a:active { color: #616161; }
+
+.sponsor-logo {
+	margin-left: 25px;
+	padding-bottom: 25px;
+}
+
+.sponsor-logo-sidebar {
+	margin-bottom: 5px;
+}
+
+.sponsors {
+	padding-bottom: 15px;
+}
+
+.footer {
+	background-color: #033c6b;
+	color: #fafafa;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.footer a:link { color: #fafafa; }
+.footer a:visited { color: #fafafa; }
+.footer a:hover { color: #fafafa; }
+.footer a:active { color: #fafafa; }
+
+.footer h4 {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+	text-align: center;
+	color: #fafafa;
+}
+
+.page-wrap:after {
+	content: "";
+	display: block;
+}
+
+.row {
+	overflow: hidden;
+}
+
+.left-col {
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	-moz-border-radius-topleft: 8px
+	-moz-border-radius-bottomleft: 8px
+}
+
+.right-col {
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	-moz-border-radius-topright: 8px
+	-moz-border-radius-bottomright: 8px
+}
+
+.map {
+	width: 100%;
+	min-height; 100%;
+	border: 0;
+}
+
+.fill {
+	height: 100%;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #033c6b;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-brand:focus {
+    outline: 0;
+}
+
+.navbar-custom a {
+    color: #fff;
+}
+
+.navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #fff;
+}
+
+@media(min-width:994px) {
+    .navbar {
+        padding: 5px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+		background-color: #033c6b;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+        background-color: #033c6b;
+    }
+
+    .navbar-custom.top-nav-collapse {
+        border-bottom: 1px solid rgba(255,255,255,.3);
+    }
+
+	.anchor {
+		display: block;
+		height: 50px;
+		margin-top: -50px;
+		visibility: hidden;
+	}
+
+	.airport-image {
+		padding-top: 70px;
+	}
+
+	#pgeubase div .regleft {
+		width: 600px;
+		float: left;
+	}
+}
+
+.pc-caption small {
+	white-space: nowrap;
+}
+
+.sponsor-label {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-align: center;
+	color: #616161;
+	display:block;
+}
+
+.name {
+	font-size: 20px;
+    font-weight: 700;
+}
+
+.price {
+	padding-top: 10px;
+}
+
+.big-text {
+	font-size: 16px;
+}
+
+.speaker {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-align: center;
+	color: #616161;
+	display:block;
+}
+
+.btn-signup {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.list-contact-item {
+	padding-bottom: 15px;
+}
+
+#pgeubase {
+   margin-bottom: 20px;
+   padding-bottom: 10px;
+}
+
+#twitter-widget-0 {
+	width: 100% !important;
+}
+
+.airport-image {
+	height: auto;
+	max-width: 100%;
+}
+
+#pgeubase h1 {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+	text-align: center;
+	text-shadow: none;
+	color: #616161;
+}
+
+
+#pgeubase input[type=text],textarea[id*='id_'] {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+#pgeubase textarea[id*='id_'] {
+  height: auto;
+}
+
+#pgeubase label[for*='id_'] {
+	padding-top:7px;
+	font-weight:400;
+}
+
+.regleft ul {
+	list-style-type:none;
+}
+
+#pgeubase ul {
+	list-style-type: none;
+}
+
+#voucher_codes {
+  margin-bottom: 15px;
+}
+
+#pgeubase input[type=submit] {
+  display: inline-block;
+  float: none;
+  padding: 6px 12px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: bottom;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+#pgeubase input[type=submit]:focus,
+#pgeubase input[type=submit]:active:focus,
+#pgeubase input[type=submit].active:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+#pgeubase input[type=submit]:active,
+#pgeubase input[type=submit].active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+.pgeuregformconfirm input[type=submit] {
+	width: 220px !important;
+}
+
+#personal_information legend {
+	padding-top: 20px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+	color: #616161;
+	border-bottom: none;
+}
+
+#conference_info legend {
+	padding-top: 20px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+	color: #616161;
+	border-bottom: none;
+}
+
+#additional_options legend {
+	padding-top: 20px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+	color: #616161;
+	border-bottom: none;
+}
+
+#additional_options label[for*='id_additionaloptions_'] {
+    margin-left: 1.5em;
+    text-indent: -1.5em;
+}
+
+#voucher_codes legend {
+	padding-top: 20px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+	color: #616161;
+	border-bottom: none;
+}
+
+#id_shirtsize, #id_country, #id_regtype {
+	margin-left: 5px;
+}
+
+#pgeubase td {
+	vertical-align: top;
+}
+
+#pgeubase h3 {
+	text-align: left;
+	font-size: 18px;
+}
+
+#pgeubase h2 {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+	text-align: left;
+	text-shadow: none;
+	color: #616161;
+	font-size: 21px;
+}
+
+#pgeubase ul {
+	padding-left: 0px;
+}
+
+ul.pgeubulkpaylist li ul li {
+    padding-left: 20px;
+}
+
+/* Schedule */
+div.sessblock {
+   color: #000;
+}

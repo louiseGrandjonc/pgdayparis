@@ -1,0 +1,6 @@
+[twitter]
+account=whatever
+token=sometoken
+secret=somesecret
+consume=someconsumer
+consumersecret=someconsumersecret

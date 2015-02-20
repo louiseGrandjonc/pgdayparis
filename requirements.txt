@@ -1,0 +1,8 @@
+Django==1.6.8
+Markdown==2.5.2
+argparse==1.2.1
+django-markup==0.4
+markup==0.2
+psycopg2==2.6
+simplejson==3.6.5
+wsgiref==0.1.2

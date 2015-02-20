@@ -1,0 +1,223 @@
+{%extends "pgconfeu/base.html"%}
+{%block title%}Registration{%endblock%}
+{%block headline%}Registration{%endblock%}
+{%block pgconfeucontent%}
+	<div class="fluid-container bottom">
+		<div class="row">
+			<div class="col-md-12 content left-col right-col">
+				<p class="lead text-center abstract">
+					Registration is now open, and the conference almost sold out!
+				</p>
+
+				<table class="table table-responsive">
+					<thead>
+						<tr>
+							<th class="text-center"><strong><i class="fa fa-ticket"></i></strong></th>
+							<th><strong>Price</strong></th>
+							<th><strong>Description</strong></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Early Bird</td>
+							<td>160€</td>
+							<td>Available to everybody, must be registered and paid before Sep 15th, 2014 <span class="label label-warning"><em>No longer available</em></span></td>
+						</tr>
+						<tr>
+							<td>Standard</td>
+							<td>200€</td>
+							<td><a href="#waitlist"><span class="label label-info"><em>Waitlist only</em></span></a> Available to everybody</td>
+						</tr>
+						<tr>
+							<td>Training Attendees</td>
+							<td>160€</td>
+							<td><a href="#waitlist"><span class="label label-info"><em>Waitlist only</em></span></a> Available to attendees who also purchase add-on training on Tuesday 21st</td>
+						</tr>
+						<tr class="success">
+						  <td>Training Only</td>
+						  <td><i>Free</i></td>
+						  <td><span class="label label-info">Available until Oct 16, 12:00 CEST</span> Access to training sessions on Tuesday 21st <strong>only</strong>, with <i>no</i> access to the general conference. Available to attendees who also purchase add-on training</td>
+						</tr>
+						<tr>
+							<td>Single Day</td>
+							<td>100€</td>
+							<td><span class="label label-warning"><em>No longer available</em></span> Entrance to either Wednesday, Thursday or Friday</td>
+						</tr>
+						<tr>
+							<td>Student</td>
+							<td>50€</td>
+							<td><span class="label label-warning"><em>No longer available</em></span> Requires a valid student ID</td>
+						</tr>
+						<tr>
+							<td>Speaker</td>
+							<td><em>Free</em></td>
+							<td>Available to confirmed speakers</td>
+						</tr>
+						<tr>
+							<td>Pay at door</td>
+							<td>300€</td>
+							<td><span class="label label-warning"><em>No longer available</em></span> Only in exceptional cases, please <a href="/contact/">contact us</a> before using.</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<p class="text-center">
+					<a class="btn btn-success btn-lg btn-signup" rel="nofollow" role="button" href="https://www.postgresql.eu/events/register/pgconfeu2014/">
+						Sign up!
+					</a>
+				</p>
+
+				<h4>Waitlist</h4>
+				<a name="waitlist"></a>
+				<p>
+				  The conference is now almost sold out. For this reason we
+				  can no longer accept direct registrations. But as we'd like
+				  to accommodate as many people as possibly, you can still
+				  sign up on the <i>waitlist</i>. To do this, you have to
+				  fill out the <i>complete</i>
+				  <a href="https://www.postgresql.eu/events/register/pgconfeu2014/">registration form</a>
+				  and select the registration type <i>Waitlist</i>. Once you
+				  have filled the form out and saved it, you will have a place
+				  on the waitlist. We will process the waitlist in a
+				  first-come-first-serve order, and you will receive an email
+				  once you have been moved from the waitlist to the attendee
+				  list. Once you have received this email you will be able
+				  to complete the registration (and we will require that you
+				  complete the payment immediately) and join the conference.
+				</p>
+				<p>
+				  We still have seats left for the <i>training day</i>. If you
+				  wish to attend the training, you can register using the
+				  rate that only allows entrance on the Tuesday. Note that this
+				  does <i>not</i> grant you access to the general conference.
+				  If you wish to secure a seat for the training and also
+				  be on the waitlist for the general conference, complete
+				  the <i>training only</i> registration, and then
+				  <a href="mailto:contact@pgconf.eu">contact us</a> for
+				  manual waitlisting.
+				</p>
+
+				<h4>What's Included</h4>
+					<ul>
+						<li>Access to all sessions during the specified days</li>
+						<li>An amazing hallway track</li>
+						<li>Three course lunch and plenty of coffee with snacks</li>
+						<li>Goodlooking conference swag</li>
+						<li>After hours social activities</li>
+					</ul>
+
+				<h4>Registration fee</h4>
+				<p>
+					The registration fee depends on the type of registration. It must be paid
+					in advance using one of the approved methods. Once your payment has completed,
+					you will receive a PDF copy of your receipt using email, and it will also be
+					available for download on the registration page. Please verify that your
+					payment has been received within one week of paying it (by checking the status
+					on the registration form), and <a href="/contact/">contact us</a> if it hasn't.
+				</p>
+				<p>
+					Once your registration <em>and</em> payment have been confirmed, you will
+					automatically be added to the attendees' mailinglist. The addition to this
+					mailinglist is your final confirmation of your registration.
+				</p>
+				<p>
+				        You can pay using <em>Credit Card</em>
+				        (Mastercard, Visa or American Express), as
+				        well as using <em>PayPal</em>. If you plan to
+				        register many attendees to be paid for by the
+				        same person, we also
+				        offer <a href="#bulk">bulk payment</a>.
+				</p>
+
+				<h4>Training</h4>
+				<p>
+					On Tuesday the day before the conference, we will also be providing
+					<a href="/training/">training</a> sessions. These
+					are in-depth sessions, and cost an extra 150 € per
+					half-day session or 300 € per full-day session.
+				</p>
+				<p>
+					Participants in the training sessions are entitled to a discounted
+					rate for the rest of the conference, regardless of registration date.
+					Training must be pre-paid using one of the standard methods - the pay at door
+					method is not valid for training registrations.
+				</p>
+
+				<h4>Cancellation</h4>
+				<p>
+					If you need to cancel your registration after you have paid, please
+					<a href="/contact/">contact us</a> via email for manual handling.
+				</p>
+				<ul>
+					<li>
+						If you cancel at least 4 weeks before the conference, we will refund you the full cost
+						of the registration, minus any transaction fees.
+					</li>
+					<li>
+						If you cancel at least 2 weeks before the conference, we will refund you 50% of the
+						cost of the registration, minus any transaction fees.
+					</li>
+					<li>
+						If you cancel less than 2 weeks before the conference, we will refund you 25% of the
+						cost of the registration, minus any transaction fees.
+					</li>
+				</ul>
+
+				<span class="anchor" id="bulk"></span>
+				<h4>Bulk payment</h4>
+				<p>
+					We also have a bulk payment system available for those who wish to register multiple
+					attendees and pay on a single invoice. This system is intended for companies who wish
+					to send many employees or vendors/providers who wish to pay for their customers to go
+					to the conference. As it includes more steps, it is recommended that the regular
+					registration process is used when possible.
+				</p>
+				<p>
+					To use the bulk payment system, please follow the following process:
+				</p>
+					<ol>
+						<li>
+							Each <i>individual attendee</i> uses the regular
+   							<a href="https://www.postgresql.eu/events/register/pgconfeu2014/">
+     						registration form</a> to register, including filling out all
+							details and possible additional options such as training. This
+							is necessary since the connected account is used in all communication
+							with the attendee, including participating in events and feedback.
+							For this reason, it is important that each attendee
+							<em>register themselves</em>, so they get access to all the features
+							during the conference.
+							<b>The attendee should <em>not</em> proceed to payment of the registration.</b>
+ 						</li>
+						<li>
+							The person in charge of payment (who does not need to be one of
+							the attendees, but can be) proceeds to
+							<a href="https://www.postgresql.eu/events/bulkpay/pgconfeu2014/">
+							the bulk payment page</a>, and fills in the invoicing details.
+						</li>
+						<li>
+							The person in charge of payment fills in all the email addresses
+							for the attendees to pay for on this page, validates that the total
+							cost is correct, and generates an invoice.
+							Generating the invoice locks all registrations against modifications,
+							but just as with regular registrations they are not confirmed until
+							the invoice is paid.
+						</li>
+						<li>
+							The person in charge of payment pays the invoice using creditcard
+							or paypal. Note that the invoice is <em>due on receipt</em> just like
+							all other registrations, and must be paid using the same methods.
+							If you cannot pay using any of these methods, please
+							<a href="/contact/">contact us</a> <em>ahead of time</em> to work
+							out the details.
+						</li>
+						<li>
+							When the invoice is paid in the system, all attached registrations
+							will automatically be confirmed, and the attendees added to the
+							mailinglist. Only the person in charge of payment will receive a
+							PDF copy of the receipt for the transaction.
+						</li>
+					</ol>
+			</div>
+		</div>
+	</div>
+{%endblock%}

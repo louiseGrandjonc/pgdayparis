@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="PostgreSQL Conference Paris 2015">
+	<meta name="author" content="PostgreSQL Paris">
+	<title>{%block title%}{%endblock%}{%block titlesuffix%} - PostgreSQL Conference Paris 2015{%endblock%}</title>
+
+	<link href="{{mediabase|default:"http://pgday.paris/"}}files/css/pgday.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="favicon.ico" />
+  <link href="{{mediabase|default:"http://pgday.paris/"}}files/css/home.css" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+{%block extrahead%}{%endblock%}
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+
+    <nav id="nav" role="navigation">
+      <div class="container-fluid">
+        <div class="brand">
+          <a class="fl-logo" href="http://pgday.paris">
+            <img class="img svg" id="logo-header" src="{{mediabase|default:"http://pgday.paris/"}}files/img/logos/pgdayparis.svg" height="50">
+            <strong>PGDayParis</strong>
+          </a>
+        </div>
+        {% block menu %}
+          <div class="collapse" id="menu">
+            <ul>
+              <li class="active"><a href="{{linkbase|default:"http://2014.pgconf.eu/"}}">Home</a></li>
+              <li><a href="{{linkbase|default:"http://2014.pgconf.eu/"}}callforpapers/">Call for papers</a></li>
+              <li><a href="{{linkbase|default:"http://2014.pgconf.eu/"}}sponsors/">Sponsors</a></li>
+              <li><a href="{{linkbase|default:"http://2014.pgconf.eu/"}}contact/">Contact</a></li>
+            </ul>
+          </div>
+        {% endblock %}
+      </div>
+    </nav>
+
+    {% block intro %}{% endblock %}
+
+    <main id="content" role="main">
+				<div class="col-md-10 col-md-offset-1 heading">
+					<h1 class="heading">{%block headline%}{%endblock%}</h1>
+				</div>
+					{%block pgdaypariscontent %}{%endblock%}
+    </main>
+
+	<footer id="footer">
+    <div class="layer"></div>
+      <div class="container">
+        <div class="row">
+          <section class="links">
+              <ul>
+                <li>
+                  <a class="fl-logo" href="http://felynx.com">
+                    <img class="img svg" id="logo-footer" src="{{mediabase|default:"http://pgday.paris/"}}files/img/logos/pgdayparis.svg" height="50">
+                    <strong>PGDayParis</strong>
+                  </a>
+                </li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </section>
+            <section class="social">
+              <ul>
+                <li>
+                  <a href="http://twitter.com/pgdayparis" target="_blank" rel="nofollow"><i class="fa fa-twitter"></i></a>
+                </li>
+              </ul>
+            </section>
+        </div>
+      </div>
+    </footer>
+
+{%block extrascript%}{%endblock%}
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-1345454-11']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</body>
+</html>

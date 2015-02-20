@@ -1,0 +1,54 @@
+{% extends "pgdayparis/base.html" %}
+{% block title %}Contact{% endblock %}
+{% block headline %}Contact{% endblock %}
+{% block menu %}
+  <div class="collapse" id="menu">
+    <ul>
+      <li><a href="{{linkbase|default:"http://2014.pgconf.eu/"}}">Home</a></li>
+      <li><a href="{{linkbase|default:"http://2014.pgconf.eu/"}}callforpapers/">Call for papers</a></li>
+      <li><a href="{{linkbase|default:"http://2014.pgconf.eu/"}}sponsors/">Sponsors</a></li>
+      <li class="active"><a href="{{linkbase|default:"http://2014.pgconf.eu/"}}contact/">Contact</a></li>
+    </ul>
+  </div>
+{% endblock %}
+
+{% block pgdaypariscontent %}
+	<div class="fluid-container bottom">
+		<div class="row">
+			<div class="col-md-12 content left-col right-col">
+				<p class="lead text-center abstract">
+					Keep in touch, we'd love to hear from you!
+				</p>
+				<p>
+					The best way to get in touch with the conference staff is to send us an email to
+					<a href="mailto:contact@pgconf.eu">contact@pgconf.eu</a>.
+				</p>
+				<p>In case of emergency <b>during</b> the conference, you can
+				  also call the conference team at
+				  <a href="tel:+34657175399">+34 65 717 53 99</a>.
+				</p>
+				<p>You can also engage with
+					us on social media.
+					<ul class="list-unstyled">
+						<li class="list-contact-item">
+							<i class="fa fa-lg fa-facebook-square"></i> Facebook: <a href="https://www.facebook.com/PGConf.EU">PostgreSQL Conference Europe</a>
+						</li>
+						<li class="list-contact-item">
+							<i class="fa fa-lg fa-google-plus"></i> Google+: <a href="https://plus.google.com/110821834669661712586?prsrc=3">PostgreSQL Conference Europe</a>
+						</li>
+						<li class="list-contact-item">
+							<i class="fa fa-lg fa-twitter"></i> Twitter: <a href="http://twitter.com/pgdayparis">@pgdayparis</a>
+						</li>
+						<!--
+						<li>
+							Xing: <a href="https://www.xing.com/events/postgresql-conference-europe-2013-1228633">PGConf.EU 2013</a>
+						</li>
+						-->
+						<li class="list-contact-item">
+							<span class="label label-default">L</span> Lanyrd: <a href="http://lanyrd.com/2014/pgdayparis-october/">2014/pgdayparis</a>
+						</li>
+					</ul>
+			</div>
+		</div>
+	</div>
+{%endblock%}

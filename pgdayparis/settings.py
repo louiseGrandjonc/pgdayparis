@@ -88,6 +88,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.staticfiles',
     'pgdayparis',
+    'pgdayparis.base',
 )
 
 DATETIME_FORMAT="Y-m-d H:i:s"

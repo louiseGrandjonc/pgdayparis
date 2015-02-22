@@ -1,96 +1,33 @@
 {% extends "pgdayparis/base.html" %}
-{% block title %}Sponsors{% endblock %}
-{% block headline %}Sponsors{% endblock %}
+{% load staticfiles %}
 {% block menu %}
   <div class="collapse" id="menu">
     <ul>
-      <li><a href="{{linkbase|default:"http://2014.pgconf.eu/"}}">Home</a></li>
-      <li><a href="{{linkbase|default:"http://2014.pgconf.eu/"}}callforpapers/">Call for papers</a></li>
-      <li class="active"><a href="{{linkbase|default:"http://2014.pgconf.eu/"}}sponsors/">Sponsors</a></li>
-      <li><a href="{{linkbase|default:"http://2014.pgconf.eu/"}}contact/">Contact</a></li>
+      <li><a href="{{linkbase|default:"http://pgday.paris/"}}">Home</a></li>
+      <li><a href="{{linkbase|default:"http://pgday.paris/"}}callforpapers/">Call for papers</a></li>
+      <li class="active"><a href="{{linkbase|default:"http://pgday.paris/"}}sponsors/">Sponsors</a></li>
+      <li><a href="{{linkbase|default:"http://pgday.paris/"}}contact/">Contact</a></li>
     </ul>
   </div>
 {% endblock %}
 {%block pgdaypariscontent%}
-	<div class="fluid-container bottom">
-		<div class="row">
-			<div class="col-md-12 content left-col right-col">
-				<h3>Our Sponsors</h3>
-				<p class="lead text-center">
-					PostgreSQL Conference Europe wouldn't be possible without support from our generous sponsors.
-				</p>
-				<p>
-					Interested in becoming a sponsor? See our
-					<a href="{{linkbase|default:"http://2014.pgconf.eu"}}becomesponsor/">sponsorship opportunities</a>!
-				</p>
-				<div class="text-center sponsors">
-				<h4>Platinum Sponsors</h4>
-					<ul class="list-inline">
-						{%for s in sp_plat%}
-							<li class="sponsor-logo">
-								<a href="{{s.url}}">
-									<img
-										src="{{mediabase|default:"http://2014.pgconf.eu/"}}files/img/sponsor/{{s.img}}"
-										alt="{{s.name}}"
-									/>
-								</a>
-							</li>
-						{%endfor%}
-					</ul>
-				</div>
-				<div class="text-center sponsors">
-				<h4>Gold Sponsors</h4>
-					<ul class="list-inline">
-						{%for s in sp_gold%}
-							<li class="sponsor-logo">
-								<a href="{{s.url}}">
-									<img
-										src="{{mediabase|default:"http://2014.pgconf.eu/"}}files/img/sponsor/{{s.img}}"
-										alt="{{s.name}}"
-									/>
-								</a>
-							</li>
-						{%endfor%}
-					</ul>
-				</div>
-				<div class="text-center sponsors">
-				<h4>Silver Sponsors</h4>
-					<ul class="list-inline">
-						{%for s in sp_silver%}
-							<li class="sponsor-logo">
-								<a href="{{s.url}}">
-									<img
-										src="{{mediabase|default:"http://2014.pgconf.eu/"}}files/img/sponsor/{{s.img}}"
-										alt="{{s.name}}"
-									/>
-								</a>
-							</li>
-						{%endfor%}
-					</ul>
-				</div>
-				<div class="text-center sponsors">
-					<h4>Bronze Sponsors</h4>
-					<ul class="list-inline">
-						{%for s in sp_bronze%}
-							<li class="sponsor-logo">
-								<a href="{{s.url}}">
-									<img
-										src="{{mediabase|default:"http://2014.pgconf.eu/"}}files/img/sponsor/{{s.img}}"
-										alt="{{s.name}}"
-									/>
-								</a>
-							</li>
-						{%endfor%}
-					</ul>
-				</div>
-				<p>
-                                        The PGConf.EU organizers would like to extend our sincere gratitude to all our sponsors for their
-                                        support not only of the conference but of the greater PostgreSQL community.
-				</p>
-				<p class="lead text-center">
-					Thank you!
-				</p>
-			</div>
-		</div>
-	</div>
+  <section class="defs">
+    <h2> Les sponsors de cette éditions sont : </h2>
+    <dl>
+      <dt>
+        <img src="{% static "img/logos/2ndquadrant_logo_full_color.jpg" %}" style="width:400px;" >
+      </dt>
+      <dd>Un mot sur 2nd quadrant</dd>
+    </dl>
+    <header>
+      <h2>Sponsors</h2>
+    </header>
+    <dl>
+      <dt>
+        <img src="{% static "img/logos/loxologo.png" %}" style="width:400px;">
+      </dt>
+      <dd>Un mot sur loxodata</dd>
+    </dl>
+  </section>
+
 {%endblock%}

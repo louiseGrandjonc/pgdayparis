@@ -7668,8 +7668,7 @@ h1, h2, h3 {
     margin-top: 10px;
     margin-bottom: 48px; }
 #content ul {
-  padding-left: 0;
-  list-style-image: url("../img/logos/logo.png"); }
+  list-style-image: url("../img/logos/list_logo.png"); }
   #content ul li {
     margin-bottom: 1em; }
   #content ul i {

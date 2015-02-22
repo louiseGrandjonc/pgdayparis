@@ -5,20 +5,17 @@ TEMPLATE_DEBUG = DEBUG
 
 # Developpment database.
 DATABASES = {
-    'default':{
-        'ENGINE':'django.db.backends.postgresql_psycopg2', # '.postgresql_psycopg2', '.mysql', or '.oracle'
-        'NAME':'pgdayparis2015', # Required to be non-empty string
-        'USER':'postgres', # Required to be non-empty string
-        'PASSWORD':'postgres',
-        'HOST':'localhost', # Set to empty string for localhost.
-        'PORT':'', # Set to empty string for default.
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'pgdayparis2015',  # Required to be non-empty string
+        'USER': 'louisegrandjonc',  # Required to be non-empty string
     },
 }
 
 # Heroku database
 
-import dj_database_url
-DATABASES['default'] =  dj_database_url.config()
+# import dj_database_url
+# DATABASES['default'] =  dj_database_url.config()
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name

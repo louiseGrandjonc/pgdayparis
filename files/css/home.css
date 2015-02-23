@@ -7639,7 +7639,9 @@ h1, h2, h3 {
 
 #content section {
   margin: 48px -15px;
-  border-bottom: 1px dotted #eee; }
+  border-bottom: 1px dotted #eee;
+  text-align: justify;
+  text-justify: inter-word; }
   #content section:last-child {
     border-bottom: none; }
 #content h2 {
@@ -7668,6 +7670,7 @@ h1, h2, h3 {
     margin-top: 10px;
     margin-bottom: 48px; }
 #content ul {
+  padding-left: 0;
   list-style-image: url("../img/logos/list_logo.png"); }
   #content ul li {
     margin-bottom: 1em; }

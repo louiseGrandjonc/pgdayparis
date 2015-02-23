@@ -7669,6 +7669,8 @@ h1, h2, h3 {
   #content dl dd {
     margin-top: 10px;
     margin-bottom: 48px; }
+#content iframe {
+  width: 848px; }
 #content ul {
   padding-left: 0;
   list-style-image: url("../img/logos/list_logo.png"); }

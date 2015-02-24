@@ -7672,8 +7672,8 @@ h1, h2, h3 {
 #content #map-canvas {
   width: 848px;
   height: 500px; }
-#content iframe {
-  width: 848px; }
+#content iframe[id^='twitter-widget-'] {
+  width: 848px !important; }
 #content ul {
   padding-left: 0;
   list-style-image: url("../img/logos/list_logo.png"); }

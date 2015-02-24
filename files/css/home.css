@@ -7669,6 +7669,9 @@ h1, h2, h3 {
   #content dl dd {
     margin-top: 10px;
     margin-bottom: 48px; }
+#content #map-canvas {
+  width: 848px;
+  height: 500px; }
 #content iframe {
   width: 848px; }
 #content ul {

@@ -2,28 +2,6 @@
 {% load staticfiles %}
 {%block titlesuffix%}{%endblock%}
 
-{% block extrahead %}
-<script src="https://maps.googleapis.com/maps/api/js"></script>
-<script>
-  function initialize() {
-      var mapCanvas = document.getElementById('map-canvas');
-      var mapOptions = {
-          center: new google.maps.LatLng(48.856654, 2.352423),
-          zoom: 13,
-          mapTypeId: google.maps.MapTypeId.ROADMAP}
-      var map = new google.maps.Map(mapCanvas, mapOptions)
-
-      var myLatlng = new google.maps.LatLng(48.841093, 2.316344);
-      var marker = new google.maps.Marker({
-          position: myLatlng,
-          map: map,
-          title: 'La poste'
-      });
-  }
-  google.maps.event.addDomListener(window, 'load', initialize);
-
-</script>
-{% endblock %}
 {% block intro %}
 	<header class="cover">
       <div class="layer">
@@ -69,22 +47,22 @@
 		  </p>
 		</small></h4>
 
-        </article>
-    </section>
-    <section class="like-you">
-      <article class="col-sm-12 col-md-offset-1 col-md-9">
-        <h2>Nous trouver</h2>
-         <p>
-          </br><span>44 boulevard de Vaugirard, 75015 PARIS</span>
-         </p>
-          <p>
-            Métro Montparnasse-Bienvenüe : lignes 4, 6, 12 ou 13
-            </br>
-            Métro Pasteur : lignes 12
-          </p>
-          <div id="map-canvas">
-          </div>
-      </article>
+</article>
+
+</section>
+<section class="for-you">
+  <article class="col-sm-12 col-md-6">
+    <h2>pgDay Paris <br><span>April 21st, 2015</span> </h2>
+    <p>
+      pgDay Paris 2015 is an excellent chance to learn more about the worlds most advanced open source database among your peers in France. Whether you use PostgreSQL as a DBA, an application developer, an sysadmin or a devop; whether you are interested into resource and risk management or technical details ; pgDay Paris will have something for you.</p>
+    <p>
+      Our call for presentations is now open and registration will open shortly. We hope to see you in Paris!
+    </p>
+  </article>
+  <figure class="col-sm-12 col-md-6">
+    <img height="350" src="{% static "img/screens/international.jpg" %}">
+  </figure>
+
     </section>
     {% if posts %}
 		<section class="for-you">

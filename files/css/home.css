@@ -7433,13 +7433,14 @@ h1, h2, h3 {
     transform: scale(1.1) rotate3d(1, 1, 1, -10deg); }
 
 #footer {
+  background: url(../img/screens/forest.jpg) no-repeat fixed;
   background-position: center;
   background-size: cover;
   color: white;
   margin-top: 80px;
   position: relative; }
   #footer .layer {
-    background: #0085b0;
+    background: rgba(0, 133, 176, 0.94);
     display: block;
     height: 100%;
     position: absolute;
@@ -7451,7 +7452,7 @@ h1, h2, h3 {
     display: block;
     position: absolute;
     text-align: center;
-    top: -84px;
+    top: 52px;
     width: 100%; }
     #footer .avatar span {
       border: 5px solid white;
@@ -7495,11 +7496,9 @@ h1, h2, h3 {
       #footer .fl-logo:hover path {
         fill: #58ACFA !important; }
   #footer .links {
-    font-size: 14px;
     margin-top: 15px;
     padding: 0; }
     #footer .links ul > li > a {
-      font-weight: 100;
       padding: 26px 10px 12px;
       padding-top: 26px; }
   #footer .subnav a {
@@ -7525,18 +7524,16 @@ h1, h2, h3 {
     position: relative; }
     #footer footer nav {
       height: 100px; }
-    #footer footer ul > li > a {
-      color: #0085b0; }
-      #footer footer ul > li > a:hover, #footer footer ul > li > a:focus {
-        background: none;
-        color: #58ACFA; }
+    #footer footer ul > li > a:hover, #footer footer ul > li > a:focus {
+      background: none; }
   @media (max-width: 767px) {
     #footer {
       margin-top: 0; }
       #footer footer nav {
         height: auto; }
       #footer .about {
-        text-align: center; }
+        text-align: center;
+        font-weight: 300 !important; }
       #footer .author {
         padding-top: 258px; }
       #footer .avatar {
@@ -7556,8 +7553,6 @@ h1, h2, h3 {
         position: absolute;
         top: -80px;
         width: 100%; }
-        #footer .social a {
-          color: #58ACFA; }
         #footer .social ul {
           margin: 0; } }
 

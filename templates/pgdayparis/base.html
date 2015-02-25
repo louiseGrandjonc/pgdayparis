@@ -48,31 +48,57 @@
 					{%block pgdaypariscontent %}{%endblock%}
     </main>
 
-	<footer id="footer">
-    <div class="layer"></div>
+<footer id="footer">
+      <div class="layer"></div>
       <div class="container">
         <div class="row">
-          <section class="links">
+          <section class="about">
+            <h2>À propos</h2>
+            <p>Lien avec le pgday france de belfort, les confs seront
+            pas les même alors venez, regarde comme on est bien blabla à écrire avec dim
+            toute à l'heure et mettre un joli lien</p>
+          </section>
+          <section class="author">
+            <ul>
+              <li class="avatar">
+                <span><img src={% static "img/logos/pg-france.png" %}
+                alt="Logo de l'événement"></span>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <footer>
+        <nav>
+          <div class="row">
+            <section class="links">
               <ul>
                 <li>
-                  <a class="fl-logo" href="{% url 'pgdayparis.base.views.index' %}">
-                    <img class="img svg" id="logo-footer" src="{% static "img/logos/pgdayparis.svg" %}" height="50">
-                    <strong>pgDayParis</strong>
-                  </a>
+                 <a class="fl-logo" href="{% url 'pgdayparis.base.views.index' %}">
+                   <img id="logo-footer" src="{% static "img/logos/pgdayparis.svg" %}" height="50">
+                 </a>
                 </li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="{{linkbase|default:"http://pgday.paris/"}}callforpapers/">Call for papers</a></li>
+                <li><a href="{{linkbase|default:"http://pgday.paris/"}}sponsors/">Sponsors</a></li>
+                <li><a href="{{linkbase|default:"http://pgday.paris/"}}contact/">Contact</a></li>
               </ul>
             </section>
             <section class="social">
               <ul>
                 <li>
-                  <a href="http://twitter.com/pgdayparis" target="_blank" rel="nofollow"><i class="fa fa-twitter"></i></a>
+                  <a href="http://felynx.com/" target="_blank"
+                     rel="nofollow">
+                    <img src={% static "img/logos/logofelynx.svg" %} height="50">
+                    Merci à Felynx pour le CSS
+                  </a>
                 </li>
               </ul>
             </section>
-        </div>
-      </div>
+          </div>
+        </nav>
+      </footer>
     </footer>
+
 
 {%block extrascript%}{%endblock%}
 

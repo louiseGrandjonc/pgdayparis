@@ -7470,6 +7470,7 @@ h1, h2, h3 {
     line-height: 100px;
     margin-top: 46px; }
   #footer .about p {
+    text-align: justify;
     font-weight: 100;
     line-height: 30px; }
   #footer .author {

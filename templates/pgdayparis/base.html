@@ -22,7 +22,7 @@
     <nav id="nav" role="navigation">
       <div class="container-fluid">
         <div class="brand">
-          <a class="fl-logo" href="{% url 'pgdayparis.base.views.index' %}">
+          <a class="fl-logo" href="{{linkbase|default:"http://pgday.paris/"}}">
             <img id="logo-header" src="{% static "img/logos/pgdayparis.svg" %}" height="50">
           </a>
         </div>
@@ -73,7 +73,7 @@
             <section class="links">
               <ul>
                 <li>
-                 <a class="fl-logo" href="{% url 'pgdayparis.base.views.index' %}">
+                 <a class="fl-logo" href="{{linkbase|default:"http://pgday.paris/"}}">
                    <img id="logo-footer" src="{% static "img/logos/pgdayparis.svg" %}" height="50">
                  </a>
                 </li>

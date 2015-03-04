@@ -1,5 +1,4 @@
 {% extends "pgdayparis/base.html" %}
-{% load staticfiles %}
 {% block menu %}
   <div class="collapse" id="menu">
     <ul>
@@ -15,7 +14,7 @@
     <h2> Les sponsors de cette édition sont : </h2>
     <dl>
       <dt>
-        <img src="{% static "img/logos/2ndquadrant_logo_full_color.jpg" %}" style="width:400px;" >
+        <img src="{{mediabase|default:"http://pgday.paris/"}}static/img/logos/2ndquadrant_logo_full_color.jpg" style="width:400px;" >
       </dt>
       <dd>2ndQuadrant provides PostgreSQL training, consultancy and
       24/7 support, including our unique ‘Platinum Production Support’
@@ -26,7 +25,7 @@
     </header>
     <dl>
       <dt>
-        <img src="{% static "img/logos/loxologo.png" %}" style="width:400px;">
+        <img src="{{mediabase|default:"http://pgday.paris/"}}static/img/logos/loxologo.png" style="width:400px;">
       </dt>
       <dd>Expertise, Conseil, Formations sur mesure, Fiabilisation, Développement à façon et Administration PostgreSQL.</dd>
     </dl>

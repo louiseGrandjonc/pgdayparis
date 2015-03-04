@@ -1,5 +1,3 @@
-{% load staticfiles %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +8,7 @@
 	<meta name="author" content="PostgreSQL Paris">
 	<title>{%block title%}{%endblock%}{%block titlesuffix%} - PostgreSQL Conference Paris 2015{%endblock%}</title>
 
-  <link href="{% static "css/home.css" %}" rel="stylesheet">
+  <link href="{{mediabase|default:"http://pgday.paris/"}}static/css/home.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 
@@ -23,7 +21,7 @@
       <div class="container-fluid">
         <div class="brand">
           <a class="fl-logo" href="{{linkbase|default:"http://pgday.paris/"}}">
-            <img id="logo-header" src="{% static "img/logos/pgdayparis.svg" %}" height="50">
+            <img id="logo-header" src="{{mediabase|default:"http://pgday.paris/"}}static/img/logos/pgdayparis.svg" height="50">
           </a>
         </div>
         {% block menu %}
@@ -60,7 +58,7 @@
           <section class="author">
             <ul>
               <li class="avatar">
-                <span><img src={% static "img/logos/pg-france.png" %}
+                <span><img src="{{mediabase|default:"http://pgday.paris/"}}static/img/logos/pg-france.png"
                 alt="Logo de l'événement"></span>
               </li>
             </ul>
@@ -74,7 +72,7 @@
               <ul>
                 <li>
                  <a class="fl-logo" href="{{linkbase|default:"http://pgday.paris/"}}">
-                   <img id="logo-footer" src="{% static "img/logos/pgdayparis.svg" %}" height="50">
+                   <img id="logo-footer" src="{{mediabase|default:"http://pgday.paris/"}}static/img/logos/pgdayparis.svg" height="50">
                  </a>
                 </li>
                 <li><a href="{{linkbase|default:"http://pgday.paris/"}}callforpapers/">Call for papers</a></li>
@@ -87,7 +85,7 @@
                 <li>
                   <a href="http://felynx.com/" target="_blank"
                      rel="nofollow">
-                    <img src={% static "img/logos/felynx-logo.png" %} height="50">
+                    <img src="{{mediabase|default:"http://pgday.paris/"}}static/img/logos/felynx-logo.png" height="50">
                     Merci à Felynx pour le CSS
                   </a>
                 </li>

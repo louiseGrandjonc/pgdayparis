@@ -1,5 +1,4 @@
 {%extends "pgdayparis/base.html"%}
-{% load staticfiles %}
 {%block titlesuffix%}{%endblock%}
 
 {% block intro %}
@@ -18,7 +17,7 @@
 {% block pgdaypariscontent %}
 	<section class="like-you">
         <figure class="col-sm-12 col-md-7">
-          <img src="{% static "img/logos/pgdayparis.png" %}" width="700" height="359" alt="pgDay Presentations">
+          <img src="{{mediabase|default:"http://pgday.paris/"}}static/img/logos/pgdayparis.png" width="700" height="359" alt="pgDay Presentations">
         </figure>
         <article class="col-sm-11 col-md-5">
           <h2>pgDay Paris <br><span>le 21 avril 2015</span> </h2>
@@ -60,7 +59,7 @@
     </p>
   </article>
   <figure class="col-sm-12 col-md-6">
-    <img height="350" src="{% static "img/screens/international.jpg" %}">
+    <img height="350" src="{{mediabase|default:"http://pgday.paris/"}}static/img/screens/international.jpg">
   </figure>
 
     </section>
@@ -103,9 +102,9 @@
 {% block extrascript %}
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="{% static "js/bootstrap.js" %}"></script>
-  <script src="{% static "js/smoothscroll.js" %}"></script>
-  <script src="{% static "js/svgreplace.js" %}"></script>
+  <script src="{{mediabase|default:"http://pgday.paris/"}}static/js/bootstrap.js"></script>
+  <script src="{{mediabase|default:"http://pgday.paris/"}}static/js/smoothscroll.js"></script>
+  <script src="{{mediabase|default:"http://pgday.paris/"}}static/js/svgreplace.js"></script>
   <script>
       $('#nav').affix({
         offset: {

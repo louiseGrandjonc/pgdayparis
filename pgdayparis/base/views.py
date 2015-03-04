@@ -37,7 +37,7 @@ def index(request):
 
     # random.shuffle(frontimages)
 
-    return render_to_response('pgdayparis/pages/index.html', {
+    return render_to_response('pgdayparis2015/pages/index.html', {
         'posts': posts,
         # 'slides': frontimages,
     }, PgConfContext(request))
@@ -69,7 +69,7 @@ def static_fallback(request, url):
             return HttpResponseRedirect(redirects[url])
         """
 
-        t = loader.get_template('pgdayparis/pages/%s.html' % url)
+        t = loader.get_template('pgdayparis2015/pages/%s.html' % url)
         return HttpResponse(t.render(PgConfContext(request)))
     except TemplateDoesNotExist, e:
         raise Http404('Page not found')

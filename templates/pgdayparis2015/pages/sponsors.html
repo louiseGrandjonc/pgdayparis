@@ -1,0 +1,82 @@
+{% extends "pgdayparis2015/base.html" %}
+{% block menu %}
+  <div class="collapse" id="menu">
+    <ul>
+      <li><a href="{{linkbase|default:"http://pgday.paris/"}}">Home</a></li>
+      <li><a href="{{linkbase|default:"http://pgday.paris/"}}callforpapers/">Call for papers</a></li>
+      <li class="active"><a href="{{linkbase|default:"http://pgday.paris/"}}sponsors/">Sponsors</a></li>
+      <li><a href="{{linkbase|default:"http://pgday.paris/"}}contact/">Contact</a></li>
+    </ul>
+  </div>
+{% endblock %}
+{%block pgdaypariscontent%}
+  <section class="defs">
+    <h2> Les sponsors de cette édition sont : </h2>
+    <dl>
+      <dt>
+        <img src="{{mediabase|default:"http://pgday.paris/"}}static/img/logos/2ndquadrant_logo_full_color.jpg" style="width:400px;" >
+      </dt>
+      <dd>2ndQuadrant provides PostgreSQL training, consultancy and
+      24/7 support, including our unique ‘Platinum Production Support’
+      service for mission-critical environments.</dd>
+    </dl>
+    <header>
+      <h2>Sponsors</h2>
+    </header>
+    <dl>
+      <dt>
+        <img src="{{mediabase|default:"http://pgday.paris/"}}static/img/logos/loxologo.png" style="width:400px;">
+      </dt>
+      <dd>Expertise, Conseil, Formations sur mesure, Fiabilisation, Développement à façon et Administration PostgreSQL.</dd>
+    </dl>
+  </section>
+  <section class="defs">
+    <article class="col-sm-12 col-md-offset-1 col-md-9">
+      <h2>Becoming a sponsor</h2>
+      <p>pgDay Paris 2015 is a perfect opportunity to reach the open
+      source database community in Northern Europe, or just help out a
+      bit by giving back to the community for all the hard work
+      invested in making PostgreSQL the most advanced open-source
+      database in the world. We are offering two levels for sponsors
+      each with a package tailored for different reach and visibility.
+      </p>
+      <p>
+        Contact us at xxxx@pgdayparis.org for more information. We look forward to working with you!
+      </p>
+    </article>
+    <dl>
+      <dt>
+        <dfn>Supporter</dfn>
+        <small><b>400 €</b></small>
+      </dt>
+      <dd>
+      Supporter is the ideal level for showing your support to the community.
+      </br>
+        <small>- Logo on the website</small>
+        <small>- One free entry</small>
+      </dd>
+    </dl>
+        <dl>
+    <dt>
+        <dfn>Partner</dfn>
+        <small><b>1200 €</b></small>
+    </dt>
+    <dd>
+      This is the level offering maximum visibility. Partners can also
+      choose to add additional packages such as sponsoring a coffee
+      break or lunch (details decided later).
+      </br>
+      <small>- Logo on the website</small>
+      <small>- Introduction on the website</small>
+      <small>- Mention in opening/closing statement</small>
+      <small>- Signage/rollup</small>
+      <small>- Shared exhibition stand</small>
+      <small>- Logo on badges</small>
+      <small>- List of attendees</small>
+      <small>- Two free entries</small>
+      <small>- Limited to 5 sponsors</small>
+    </dd>
+</dl>
+  </section>
+
+{%endblock%}

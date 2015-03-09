@@ -7671,7 +7671,6 @@ h1, h2, h3 {
 #content iframe[id^='twitter-widget-'] {
   width: 848px !important; }
 #content ul {
-  padding-left: 0;
   #content ul li {
     margin-bottom: 1em; }
   #content ul i {

@@ -7633,6 +7633,11 @@ h1, h2, h3 {
         color: #0085b0;
         vertical-align: top; }
 
+#new_sponsor {
+  margin: 0px -15px;
+  border-bottom: 0px dotted #eee;
+}
+
 #content section {
   margin: 70px -15px;
   border-bottom: 1px dotted #eee;
@@ -7648,6 +7653,9 @@ h1, h2, h3 {
 #content dl {
   margin-bottom: 48px;
   text-align: center; }
+  #content dl:last-child {
+    margin-right: 500px;
+  }
   #content dl i {
     display: block;
     font-size: 48px;
@@ -7752,3 +7760,7 @@ h1, h2, h3 {
     font-weight: 400;
     line-height: 30px; }
 /*# sourceMappingURL=home.css.map */
+ #new_sponsor {
+     margin: 0px -15px;
+     border-bottom: 0px dotted #eee;
+ }

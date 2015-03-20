@@ -1,0 +1,47 @@
+{% extends "pgdayparis2015/base.html" %}
+{% block menu %}
+  <div class="collapse" id="menu">
+    <ul>
+      <li><a href="{{linkbase|default:"http://pgday.paris/"}}">Home</a></li>
+      <li><a href="{{linkbase|default:"http://pgday.paris/"}}callforpapers/">Call
+          for papers</a></li>
+      <li class="active"><a href="{{linkbase|default:"http://pgday.paris/"}}commitee/">Comité
+      de sélection</a></li>
+      <li><a href="{{linkbase|default:"http://pgday.paris/"}}sponsors/">Sponsors</a></li>
+      <li><a href="{{linkbase|default:"http://pgday.paris/"}}contact/">Contact</a></li>
+    </ul>
+  </div>
+{% endblock %}
+  {%block pgdaypariscontent%}
+  <section class="like-you">
+  <article class="col-sm-12 col-md-offset-1 col-md-9">
+    <h2>
+      Sélection des conférence
+    </h2>
+    <p style="">
+      Le Call for Papers est actuellement ouvert ! Vous pouvez nous
+      envoyez vos propositions <b><a href="https://www.postgresql.eu/events/callforpapers/pgdayparis2015/">ici</a></b>
+    </p>
+   </article>
+  </section>
+   <section class="defs">
+    <h2> Le commité de sélection des conférences est composé de : </h2>
+    <figure class="col-sm-12 col-md-3">
+      <img src="{{mediabase|default:"http://pgday.paris/"}}static/img/logos/dim.jpg" style="height:200px" >
+      <figcaption>>Dimitri Fontaine, 2ndQuadrant</figcaption>
+    </figure>
+    <figure class="col-sm-12 col-md-3">
+        <img src="{{mediabase|default:"http://pgday.paris/"}}static/img/logos/sas.jpg" style="height:200px;">
+        <figcaption>Stephane Schildknecht, Loxodata</figcaption>
+    </figure>
+    <figure class="col-sm-12 col-md-3">
+        <img src="{{mediabase|default:"http://pgday.paris/"}}static/img/logos/jgpailloncy.jpeg" style="height:200px">
+        <figcaption>Jean-Gérard Pailloncy, Rilk</figcaption>
+    </figure>
+    <figure class="col-sm-12 col-md-3">
+        <img src="{{mediabase|default:"http://pgday.paris/"}}static/img/logos/rodo.jpeg" style="height:200px">
+      <figcaption>Rodolphe Quiedeville, Novapost</figcaption>
+    </figure>
+
+ </section>
+{%endblock%}

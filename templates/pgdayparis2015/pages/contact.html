@@ -1,28 +1,5 @@
 {% extends "pgdayparis2015/base.html" %}
 
-{% block extrahead %}
-<script src="https://maps.googleapis.com/maps/api/js"></script>
-<script>
-  function initialize() {
-      var mapCanvas = document.getElementById('map-canvas');
-      var mapOptions = {
-          center: new google.maps.LatLng(48.856654, 2.352423),
-          zoom: 13,
-          mapTypeId: google.maps.MapTypeId.ROADMAP}
-      var map = new google.maps.Map(mapCanvas, mapOptions)
-
-      var myLatlng = new google.maps.LatLng(48.841093, 2.316344);
-      var marker = new google.maps.Marker({
-          position: myLatlng,
-          map: map,
-          title: 'La poste'
-      });
-  }
-  google.maps.event.addDomListener(window, 'load', initialize);
-
-</script>
-{% endblock %}
-
 {% block menu %}
   <div class="collapse" id="menu">
     <ul>
@@ -55,8 +32,11 @@
             </br>
             Métro Pasteur : lignes 12
           </p>
-          <div id="map-canvas">
-          </div>
+<iframe width="848" height="500" frameborder="0" scrolling="no"
+  marginheight="0" marginwidth="0"
+  src="http://cartosm.eu/map?lon=2.31650237729&lat=48.841138437741&zoom=13&width=848&height=500&mark=true&nav=true&pan=true&zb=inout&style=default&icon=down"></iframe>
+  <br/><div id="cartosmlink">
+    <a href="http://www.openstreetmap.org/?mlat=48.841138437741&mlon=2.31650237729&zoom=13&layers=M" style="text-align:left;">Voir sur une carte plus grande</a></div>
       </article>
     </section>
 {%endblock%}

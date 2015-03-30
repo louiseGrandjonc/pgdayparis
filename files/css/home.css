@@ -4827,7 +4827,7 @@ a.list-group-item-danger {
   .panel > .table-bordered > tfoot > tr:last-child > td,
   .panel > .table-bordered > tfoot > tr:last-child > th,
   .panel > .table-responsive > .table-bordered > tbody > tr:last-child > td,
-  .panel > .table-responsive > .table-bordered > tbody > tr:last-child > th,
+  .panel > .table-responsive > .table-bordered > tbody > tr:las-tchild > th,
   .panel > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
   .panel > .table-responsive > .table-bordered > tfoot > tr:last-child > th {
     border-bottom: 0; }
@@ -7653,9 +7653,7 @@ h1, h2, h3 {
 #content dl {
   margin-bottom: 48px;
   text-align: center; }
-  #content dl:last-child {
-    margin-right: 500px;
-  }
+
   #content dl i {
     display: block;
     font-size: 48px;

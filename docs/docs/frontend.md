@@ -28,4 +28,31 @@ Here the <section> and <article> are there for the design with the css. What is 
 
 ## Menu, media and staticfiles links
 
-Usually, we, django developpers 
+Usually, we, django developpers, use, in the template something like this in our links :
+
+```
+{% url 'hello-world' %}
+```
+
+Or for static files :
+
+```
+{% static "my_app/myexample.jpg" %}
+```
+
+Because of the fact that some pages aren't gonna be hosted on your website but on the pgeu's website, this won't always work. The link will only be valid on your pages.
+That's why, in the menu, and in the static includes of your base.html and base-myevent.html you shouldn't work like this. Instead, we explained in the backend part that you have a context. You should use that context to build your urls, and if the context is not loaded (on the pgeu pages), you should specify the domain. There is nothing better than an example right ?
+
+```
+<link href="{{mediabase|default:"http://my.event/"}}static/css/home.css" rel="stylesheet">
+...
+<div class="collapse" id="menu">
+  <ul>
+    <li class="active"><a href="{{linkbase|default:"http://my.event/"}}">Home</a></li>
+    <li><a href="https://www.postgresql.eu/events/schedule/pgdayparis2015/">Programme</a></li>
+    ...
+    <li><a href="{{linkbase|default:"http://my.event/"}}contact/">Contact</a></li>
+  </ul>
+</div>
+{% endblock %}
+```

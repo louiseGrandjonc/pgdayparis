@@ -24,7 +24,7 @@ This is completly essential ! It's this template that pgeu will use to include t
 
 First you have your base.html. It should contain the common things to all your pages. So you should find there your menu, you should include your css and your javascript files if you have some. We'll precise a few things concerning the links in the next part.
 
-Here the <section> and <article> are there for the design with the css. What is important is that you have two blocks. In the block content will be included all the code from the pgeu templates.
+Here the ```<section>``` and ```<article>``` are there for the design with the css. What is important is that you have two blocks. In the block content will be included all the code from the pgeu templates.
 
 ## Menu, media and staticfiles links
 

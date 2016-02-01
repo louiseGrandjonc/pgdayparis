@@ -6,7 +6,7 @@ TEMPLATE_DEBUG = DEBUG
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'pgdayparis2015',  # Required to be non-empty string
+        'NAME': 'pgdayparis2016',  # Required to be non-empty string
         'USER': 'louisegrandjonc',  # Required to be non-empty string
     },
 }
@@ -15,7 +15,7 @@ DATABASES = {
 DATABASES = {
     'default':{
         'ENGINE':'django.db.backends.postgresql_psycopg2',
-        'NAME':'pgdayparis2015', # Required to be non-empty string
+        'NAME':'pgdayparis2016', # Required to be non-empty string
         'USER':'postgres', # Required to be non-empty string
         'PASSWORD':'postgres',
         'HOST':'localhost', # Set to empty string for localhost.

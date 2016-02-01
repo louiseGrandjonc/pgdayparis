@@ -1,0 +1,43 @@
+{% extends "pgdayparis2016/base.html" %}
+
+{% block menu %}
+  <div class="collapse" id="menu">
+    <ul>
+      <li><a href="{{linkbase|default:"http://2014.pgconf.eu/"}}">Home</a></li>
+      <li><a href="https://www.postgresql.eu/events/schedule/pgdayparis2016/">Programme</a></li>
+      <li><a href="{{linkbase|default:"http://2014.pgconf.eu/"}}callforpapers/">Call
+          for papers</a></li>
+      <li><a href="{{linkbase|default:"http://pgday.paris/"}}registration/">Inscription</a></li>
+      <li><a href="{{linkbase|default:"http://pgday.paris/"}}commitee/">Comité
+      de sélection</a></li>
+      <li><a href="{{linkbase|default:"http://2014.pgconf.eu/"}}sponsors/">Sponsors</a></li>
+      <li class="active"><a href="{{linkbase|default:"http://2014.pgconf.eu/"}}contact/">Contact</a></li>
+    </ul>
+  </div>
+{% endblock %}
+
+{% block pgdaypariscontent %}
+  <section class="like-you">
+    <article class="col-sm-12 col-md-offset-1">
+      Vous pouvez à tout moment nous contacter à l'adresse mail suivante : <b>org@pgday.paris </b>
+    </article>
+ </section>
+ <section class="like-you">
+      <article class="col-sm-12 col-md-offset-1 col-md-9">
+        <h2>Nous trouver</h2>
+         <p>
+          </br><span>44 boulevard de Vaugirard, 75015 PARIS</span>
+         </p>
+          <p>
+            Métro Montparnasse-Bienvenüe : lignes 4, 6, 12 ou 13
+            </br>
+            Métro Pasteur : lignes 12
+          </p>
+<iframe width="848" height="500" frameborder="0" scrolling="no"
+  marginheight="0" marginwidth="0"
+  src="http://cartosm.eu/map?lon=2.31650237729&lat=48.841138437741&zoom=13&width=848&height=500&mark=true&nav=true&pan=true&zb=inout&style=default&icon=down"></iframe>
+  <br/><div id="cartosmlink">
+    <a href="http://www.openstreetmap.org/?mlat=48.841138437741&mlon=2.31650237729&zoom=13&layers=M" style="text-align:left;">Voir sur une carte plus grande</a></div>
+      </article>
+    </section>
+{%endblock%}

@@ -24,10 +24,10 @@ class PgConfContext(RequestContext):
 # URLs to redirect to dynamic pages
 """
 redirects = {
-    'sessions': 'http://www.postgresql.eu/events/sessions/pgdayparis2015/',
-    'schedule': 'http://www.postgresql.eu/events/schedule/pgdayparis2015/',
-    'feedback': 'https://www.postgresql.eu/events/feedback/pgdayparis2015/',
-    'm': 'https://www.postgresql.eu/m/pgdayparis2015/',
+    'sessions': 'http://www.postgresql.eu/events/sessions/pgdayparis2016/',
+    'schedule': 'http://www.postgresql.eu/events/schedule/pgdayparis2016/',
+    'feedback': 'https://www.postgresql.eu/events/feedback/pgdayparis2016/',
+    'm': 'https://www.postgresql.eu/m/pgdayparis2016/',
 }
 """
 
@@ -37,7 +37,7 @@ def index(request):
 
     # random.shuffle(frontimages)
 
-    return render_to_response('pgdayparis2015/pages/index.html', {
+    return render_to_response('pgdayparis2016/pages/index.html', {
         'posts': posts,
         # 'slides': frontimages,
     }, PgConfContext(request))
@@ -69,7 +69,7 @@ def static_fallback(request, url):
             return HttpResponseRedirect(redirects[url])
         """
 
-        t = loader.get_template('pgdayparis2015/pages/%s.html' % url)
+        t = loader.get_template('pgdayparis2016/pages/%s.html' % url)
         return HttpResponse(t.render(PgConfContext(request)))
     except TemplateDoesNotExist, e:
         raise Http404('Page not found')

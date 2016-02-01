@@ -5,7 +5,7 @@ from pgdayparis.base.models import News
 from datetime import datetime, time
 
 class NewsFeed(Feed):
-	title = description = "pgday.paris 2015 News"
+	title = description = "pgday.paris 2016 News"
 	link = "http://pgday.paris/"
 
 	description_template = 'pgdayparis/rss/news_description.html'

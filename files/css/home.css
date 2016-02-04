@@ -7613,11 +7613,6 @@ h1, h2, h3 {
     width: 100%;
     text-align: center; }
     .cover .invite-scroll a {
-      animation-delay: 0.5s;
-      animation-duration: 1s;
-      animation-fill-mode: backwards;
-      animation-iteration-count: infinite;
-      animation-name: bounce;
       background: rgba(255, 255, 255, 0.9);
       border: none;
       border-radius: 20px;

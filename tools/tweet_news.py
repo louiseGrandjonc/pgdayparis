@@ -31,7 +31,7 @@ if __name__=="__main__":
 		# Tweet this article
 		print "Tweeting: %s" % article
 
-		msg = "Update: %s - http://pgday.paris/" % article.title
+		msg = "Update: %s - http://www.pgday.paris/" % article.title
 
 		ret_dict = twitter.twitter_request('statuses/update.json', 'POST', {
 			'status': msg.encode('utf-8'),

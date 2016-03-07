@@ -22,14 +22,13 @@ class PgConfContext(RequestContext):
         # self.update(context_template_additions())
 
 # URLs to redirect to dynamic pages
-"""
 redirects = {
     'sessions': 'http://www.postgresql.eu/events/sessions/pgdayparis2016/',
     'schedule': 'http://www.postgresql.eu/events/schedule/pgdayparis2016/',
     'feedback': 'https://www.postgresql.eu/events/feedback/pgdayparis2016/',
     'm': 'https://www.postgresql.eu/m/pgdayparis2016/',
+    'commitee': '/committee/',
 }
-"""
 
 
 def index(request):
@@ -63,11 +62,9 @@ def static_fallback(request, url):
         if url.find('..') > -1:
             raise TemplateDoesNotExist
 
-        """
         # Some URLs are redirects
         if redirects.has_key(url):
             return HttpResponseRedirect(redirects[url])
-        """
 
         t = loader.get_template('pgdayparis2016/pages/%s.html' % url)
         return HttpResponse(t.render(PgConfContext(request)))

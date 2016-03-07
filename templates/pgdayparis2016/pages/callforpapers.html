@@ -1,22 +1,9 @@
 {% extends "pgdayparis2016/base.html" %}
 
-{% block menu %}
-  <div class="collapse" id="menu">
-    <ul>
-      <li><a href="{{linkbase|default:"http://www.pgday.paris/"}}">Home</a></li>
-      <li><a href="https://www.postgresql.eu/events/schedule/pgdayparis2016/">Programme</a></li>
-      <li class="active"><a href="{{linkbase|default:"http://www.pgday.paris/"}}callforpapers/">Appel à orateurs</a></li>
-       <li><a href="{{linkbase|default:"http://www.pgday.paris/"}}registration/">Inscription</a></li>
-       <li><a href="{{linkbase|default:"http://www.pgday.paris/"}}committee/">Comité de sélection</a></li>
-      <li><a href="{{linkbase|default:"http://www.pgday.paris/"}}sponsors/">Sponsors</a></li>
-      <li><a href="{{linkbase|default:"http://www.pgday.paris/"}}contact/">Contact</a></li>
-    </ul>
-  </div>
-{% endblock %}
+{% block title %}Appel à orateurs{% endblock %}
 
-{% block pgdaypariscontent%}
-<section class="like-you">
-    <h2>L'appel à orateurs est clos. Rendez-vous en 2017&nbsp;!</h2>
-    <h2>The call for papers is now closed.  See you in 2017!</h2>
-</section>
-{%endblock%}
+{% block content %}
+<h1>Appel à orateurs</h1>
+
+<p>L'appel à orateurs est clos. Rendez-vous en 2017&nbsp;!</p>
+{% endblock %}

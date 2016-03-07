@@ -1,147 +1,96 @@
 {% extends "pgdayparis2016/base.html" %}
-{% block menu %}
-  <div class="collapse" id="menu">
-    <ul>
-      <li><a href="{{linkbase|default:"http://www.pgday.paris/"}}">Home</a></li>
-      <li><a href="https://www.postgresql.eu/events/schedule/pgdayparis2016/">Programme</a></li>
-      <li><a href="{{linkbase|default:"http://www.pgday.paris/"}}callforpapers/">Appel à orateurs</a></li>
-      <li><a href="{{linkbase|default:"http://www.pgday.paris/"}}registration/">Inscription</a></li>
-      <li><a href="{{linkbase|default:"http://www.pgday.paris/"}}committee/">Comité de sélection</a></li>
-      <li class="active"><a href="{{linkbase|default:"http://www.pgday.paris/"}}sponsors/">Sponsors</a></li>
-      <li><a href="{{linkbase|default:"http://www.pgday.paris/"}}contact/">Contact</a></li>
-    </ul>
-  </div>
+
+{% block title %}Sponsors{% endblock %}
+
+{% block content %}
+<h1>Nos sponsors</h1>
+
+<p>Nous tenons à remercier chaleureusement nos sponsors, sans qui cette
+conférence ne pourrait avoir lieu.</p>
+
+<h2 id="partners">Les «&nbsp;Partners&nbsp;»</h2>
+
+<div class="w3-row-padding">
+    <div class="w3-half">
+        <div class="w3-container w3-center w3-text-theme">
+        <a href="http://www.dalibo.com">
+        <img src="{{mediabase|default:"http://www.pgday.paris/"}}static/img/logos/logo_dalibo_2016.png" style="max-width:300px" />
+        </a>
+        <p>DALIBO est le spécialiste français de PostgreSQL. Nous proposons du
+        support, de la formation et du conseil depuis 2005.</p>
+        </div>
+    </div>
+    
+    <div class="w3-half">
+        <div class="w3-container w3-center w3-text-theme">
+        <a href="http://www.loxodata.com">
+        <img src="{{mediabase|default:"http://www.pgday.paris/"}}static/img/logos/logo_loxodata_2016.png" style="max-width:300px" />
+        </a>
+        <p>Conseil Support Formation Société figurant au Palmarès Deloitte
+        Technology Fast50 en 2015, LOXODATA est le partenaire de votre
+        réussite.</p>
+        </div>
+    </div>
+</div>
+
+<h2 id="supporters">Les «&nbsp;Supporters&nbsp;»</h2>
+
+<p>Il n'y a aucun sponsor «&nbsp;Supporter&nbsp;» pour le moment.</p>
+
+<hr class="w3-theme" />
+
+<h2>Devenir sponsor</h2>
+
+<p>Le pgDay Paris est le rendez-vous annuel de la communauté PostgreSQL sur la
+capitale. Vous y recontrerez entre autres des contributeurs majeurs du projet
+ainsi que des utilisateurs de tout niveau. Pour vous, l'occasion idéale de
+proposer votre savoir-faire et de mettre votre expertise en valeur.</p>
+
+<p>Contactez-nous à <strong class="w3-text-theme"> <a
+href="mailto:org@pgday.paris">org@pgday.paris</a></strong> pour plus
+d'informations. Nous sommes impatients de travailler avec vous&nbsp;!</p>
+
+<div class="w3-row-padding">
+    <div class="w3-half">
+    <div class="w3-center w3-border w3-margin">
+        <h3 class="w3-theme-light">Supporter</h3>
+        <h4>400&nbsp;€</h4>
+        <p>Vous appréciez la communauté PostgreSQL&nbsp;? Soutenez-la&nbsp;!</p>
+        <p><a class="w3-btn w3-round w3-theme"
+        href="https://www.postgresql.eu/events/sponsor/signup/pgdayparis2016/supporter/">Je
+        m'inscris&nbsp;!</a></p>
+        <div class="w3-text-theme">
+            <p>Ce niveau vous donne accès à&nbsp;:</p>
+            <ul>
+                <li>Votre logo sur notre site</li>
+                <li>1 entrée gratuite</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+    <div class="w3-half">
+    <div class="w3-center w3-border w3-margin">
+        <h3 class="w3-theme-light">Partner</h3>
+        <h4>1200&nbsp;€</h4>
+        <p>Ce niveau de sponsoring vous offre une visibilité maximale.
+        Depêchez-vous, cette offre est limitée aux 5 premiers inscrits.</p>
+        <p><a class="w3-btn w3-round w3-theme"
+        href="https://www.postgresql.eu/events/sponsor/signup/pgdayparis2016/partner/">Je
+        m'inscris&nbsp;!</a></p>
+        <div class="w3-text-theme">
+            <p>Ce niveau vous donne accès à&nbsp;:</p>
+            <ul>
+                <li>Votre logo sur notre site</li>
+                <li>2 entrées gratuites</li>
+                <li>Descriptif de votre société sur notre site</li>
+                <li>Remerciements publics à l'ouverture et à la clôture de l'évènement</li>
+                <li>Publicité sur le lieu de l'évènement</li>
+                <li>Stand d'exposition</li>
+                <li>Votre logo sur les badges</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</div>
 {% endblock %}
-{%block pgdaypariscontent%}
-  <section class="defs">
-    <h2> Les sponsors partenaires de cette édition sont : </h2>
-    <!--
-    <article class="col-sm-12 col-md-offset-1">
-    <dl>
-      <dt>
-        <img src="{{mediabase|default:"http://www.pgday.paris/"}}static/img/logos/2ndquadrant_logo_full_color.jpg" style="width:400px;" >
-      </dt>
-      <dd>Les experts internationalement reconnus  dans les domaines du support,
-        de  la formation,  du développement,  de  la migration  et du  conseil
-        PostgreSQL.</dd>
-    </dl>
-    </article>
-    -->
-    <article class="col-sm-12 col-md-offset-1">
-     <dl>
-      <dt>
-        <a href="http://www.dalibo.com/"><img
-        src="{{mediabase|default:"http://www.pgday.paris/"}}static/img/logos/logo_dalibo_2016.png"
-        style="width:400px;"></a>
-      </dt>
-      <dd><strong>DALIBO</strong> est le spécialiste français de PostgreSQL.
-      Nous proposons du support, de la formation et du conseil depuis
-      2005.</dd>
-    </dl>
-
-    <dl>
-      <dt>
-        <a href="http://www.loxodata.com/"><img
-        src="{{mediabase|default:"http://www.pgday.paris/"}}static/img/logos/logo_loxodata_2016.png"
-        style="width:400px;"></a>
-      </dt>
-      <dd>Conseil Support Formation Société figurant au Palmarès Deloitte
-      Technology Fast50 en 2015, <strong>LOXODATA</strong> est le partenaire de
-      votre réussite.</dd>
-    </dl>
-
-    <!--
-     <dl>
-       <dt>
-      <img src="{{mediabase|default:"http://www.pgday.paris/"}}static/img/logos/LOGO_FINAL_VECTO.jpg" style="width:400px;">
-       </dt>
-       <dd>Le bon coin c'est le plus grand vide-grenier de France,
-avec plus de 25 millions d'annonces. La plateforme est une des plus
-grosses du Web en France avec plus de 5.5 milliards de pages
-vues par mois!</dd>
-     </dl>
-     -->
-    </article>
-    <!--
-    <article class="col-md-12 col-md-offset-3">
-
-     <dl>
-       <dt>
-      <img src="{{mediabase|default:"http://www.pgday.paris/"}}static/img/logos/violin.jpg" style="width:400px;">
-       </dt>
-       <dd>The Violin Flash Storage Platform stores more data in a smaller footprint and drives faster application performance for the same cost as traditional storage. It’s time to make Violin your primary storage.</dd>
-     </dl>
-     </article>
-  </section>
-   <section class="defs">
-     <h2> Les supporters de cette édition sont : </h2>
-     <article class="col-sm-12 col-md-offset-1">
-     <dl>
-      <dt>
-        <img src="{{mediabase|default:"http://www.pgday.paris/"}}static/img/logos/novapost.png" style="width:300px;" >
-      </dt>
-     </dl>
-     <dl>
-      <dt>
-        <img src="{{mediabase|default:"http://www.pgday.paris/"}}static/img/logos/EDB-logo-4c.png" style="width:300px;" >
-      </dt>
-     </dl>
-     </article>
-     -->
-  </section>
-
-<section class="defs">
-  <article class="col-sm-12 col-md-offset-1 col-md-9">
-    <h2>Devenir sponsor</h2>
-    <p>
-      Le pgDay Paris est le rendez-vous annuel de la communauté PostgreSQL sur
-      la capitale. Vous y recontrerez entre autres des contributeurs majeurs du
-      projet ainsi que des utilisateurs de tout niveau. Pour vous, l'occasion
-      idéale de proposer votre savoir-faire et de mettre votre expertise en
-      valeur.
-    </p>
-
-    <p>
-      Contactez-nous à <a href="mailto:org@pgday.paris">org@pgdayparis.org</a>
-      pour plus d'informations. Nous sommes impatients de travailler avec
-      vous&nbsp;!
-    </p>
-
-    <h2>Pour devenir sponsor, cliquez ici&nbsp;:<br/>
-      <b><a href="https://www.postgresql.eu/events/sponsor/signup/pgdayparis2016/">Je veux devenir sponsor&nbsp;!</a></b></h2>
-  </article>
-
-  <dl>
-    <dt>
-      <dfn>Supporter</dfn>
-      <small><b>400&nbsp;&euro;</b></small>
-    </dt>
-    <dd>
-      Vous appréciez la communauté PostgreSQL&nbsp;? Soutenez-la&nbsp;!
-      </br>
-      <small>- Logo sur le site web</small>
-      <small>- 1 entrée gratuite</small>
-    </dd>
-  </dl>
-
-  <dl>
-    <dt>
-        <dfn>Partner</dfn>
-        <small><b>1200&nbsp;&euro;</b></small>
-    </dt>
-    <dd>
-      Ce niveau de sponsoring vous offre une visibilité maximale.
-      Depêchez-vous, cette offre est limitée aux 5 premiers sponsors.
-      </br>
-      <small>- Logo sur le site web</small>
-      <small>- Descriptif de votre société sur le site web</small>
-      <small>- Remerciements publiques à l'ouverture et à la clôture de l'évènement</small>
-      <small>- Publicité sur le lieu de l'évènement</small>
-      <small>- Stand d'exposition</small>
-      <small>- Votre logo sur les badges</small>
-      <small>- 2 entrées gratuites</small>
-    </dd>
-  </dl>
-</section>
-
-{%endblock%}

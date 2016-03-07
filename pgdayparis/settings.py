@@ -1,6 +1,6 @@
 # Django settings for pgdayparis project.
 
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 DATABASES = {

@@ -4,92 +4,65 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="PostgreSQL Conference Paris 2016">
-	<meta name="author" content="PostgreSQL Paris">
-	<title>{%block title%}{%endblock%}{%block titlesuffix%} - PostgreSQL Conference Paris 2016{%endblock%}</title>
-
-  <link href="{{mediabase|default:"http://www.pgday.paris/"}}static/css/home.css" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<meta name="description" content="pgDay Paris 2016">
+	<meta name="author" content="pgDay Paris">
+	<title>{%block title%}{%endblock%}{%block titlesuffix%} - pgDay Paris 2016{%endblock%}</title>
+    <link rel="shortcut icon" href="{{mediabase|default:"http://www.pgday.paris/"}}static/img/logos/favicon.png" />
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="http://www.w3schools.com/w3css/w3-theme-brown.css">
 
 {%block extrahead%}{%endblock%}
+
+<style>
+    .pp-biolinum{font-family:'LinuxBiolinum',sans-serif;}
+    .pgdayparis{font-family:'Linux Biolinum',sans-serif;font-weight:bold;}
+    div.sessblock a {color:#fff}
+    div.track85 {color:#fff !important;background-color:#795548 !important}
+    div.track86 {color:#000 !important;background-color:#d7ccc8 !important}
+</style>
+
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+<body>
+<nav>
+<ul class="w3-navbar w3-large w3-theme w3-left-align">
+    <li class="w3-hide-large w3-theme w3-opennav w3-right">
+        <a href="javascript:void(0);" onclick="myFunction()">☰</a>
+    </li>
+    <li class="w3-hide-large w3-hide-medium w3-center pgdayparis"><a href="index.html">pgDay Paris</a></li>
+    <div class="w3-hide-small w3-right">
+    <li><a href="{{linkbase|default:"http://www.pgday.paris/"}}">Accueil</a></li>
+    <li><a href="https://www.postgresql.eu/events/schedule/pgdayparis2016/">Programme</a></li>
+    <li><a href="{{linkbase|default:"http://www.pgday.paris/"}}registration/">Inscriptions</a></li>
+    <li class="w3-hide-medium"><a href="{{linkbase|default:"http://www.pgday.paris/"}}sponsors/">Sponsors</a></li>
+    <li class="w3-hide-medium"><a href="{{linkbase|default:"http://www.pgday.paris/"}}contact/">Qui sommes nous&nbsp;?</a></li>
+    <li><a href="{{linkbase|default:"http://www.pgday.paris/"}}venue/">Comment venir&nbsp;?</a></li>
+    </div>
+</ul>
+<div id="demo" class="w3-hide w3-hide-large">
+  <ul class="w3-navbar w3-left-align w3-large w3-theme">
+    <div class="w3-right">
+    <li class="w3-hide-medium"><a href="https://www.postgresql.eu/events/schedule/pgdayparis2016/">Programme</a></li>
+    <li class="w3-hide-medium"><a href="{{linkbase|default:"http://www.pgday.paris/"}}registration/">Inscriptions</a></li>
+    <li><a href="{{linkbase|default:"http://www.pgday.paris/"}}sponsors/">Sponsors</a></li>
+    <li><a href="{{linkbase|default:"http://www.pgday.paris/"}}contact/">Qui sommes nous&nbsp;?</a></li>
+    <li class="w3-hide-medium"><a href="{{linkbase|default:"http://www.pgday.paris/"}}venue/">Comment venir&nbsp;?</a></li>
+    </div>
+  </ul>
+</div>
+<script>
+function myFunction() {
+    document.getElementById("demo").classList.toggle("w3-show");
+}
+</script>
+</nav>
 
-    <nav id="nav" role="navigation">
-      <div class="container-fluid">
-        <div class="brand">
-          <a class="fl-logo" href="{{linkbase|default:"http://www.pgday.paris/"}}">
-            <img id="logo-header" src="{{mediabase|default:"http://www.pgday.paris/"}}static/img/logos/pgdayparis.svg" height="50">
-          </a>
-        </div>
-        {% block menu %}
-          <div class="collapse" id="menu">
-            <ul>
-              <li class="active"><a href="{{linkbase|default:"http://www.pgday.paris/"}}">Home</a></li>
-              <li><a href="https://www.postgresql.eu/events/schedule/pgdayparis2016/">Programme</a></li>
-              <li><a href="{{linkbase|default:"http://www.pgday.paris/"}}callforpapers/">Appel à orateurs</a></li>
-              <li><a href="{{linkbase|default:"http://www.pgday.paris/"}}registration/">Inscription</a></li>
-              <li><a href="{{linkbase|default:"http://www.pgday.paris/"}}committee/">Comité de sélection</a></li>
-              <li><a href="{{linkbase|default:"http://www.pgday.paris/"}}sponsors/">Sponsors</a></li>
-              <li><a href="{{linkbase|default:"http://www.pgday.paris/"}}contact/">Contact</a></li>
-            </ul>
-          </div>
-        {% endblock %}
-      </div>
-    </nav>
+<div class="w3-main">
+<div class="w3-container">
+{%block content%}{%endblock%} 
+</div>
+</div>
 
-    {% block intro %}{% endblock %}
-
-    <main id="content" role="main">
-				<div class="col-md-10 col-md-offset-1 heading">
-					<h1 class="heading">{%block headline%}{%endblock%}</h1>
-				</div>
-					{%block pgdaypariscontent %}{%endblock%}
-    </main>
-
-    <footer id="footer">
-      <footer>
-        <nav>
-          <div class="row">
-            <section class="links">
-              <ul>
-                <li>
-                 <a class="fl-logo" href="{{linkbase|default:"http://www.pgday.paris/"}}">
-                   <img id="logo-footer" src="{{mediabase|default:"http://www.pgday.paris/"}}static/img/logos/pgdayparis.svg" height="50">
-                 </a>
-                </li>
-              </ul>
-            </section>
-            <section class="social">
-              <ul>
-                <li>
-                  <a href="http://felynx.com/" target="_blank" rel="nofollow">
-                    <img src="{{mediabase|default:"http://www.pgday.paris/"}}static/img/logos/felynx-logo.png" height="50">
-                    Merci à Felynx pour le CSS
-                  </a>
-                </li>
-              </ul>
-            </section>
-          </div>
-        </nav>
-      </footer>
-    </footer>
-
-
-{%block extrascript%}{%endblock%}
-
-	<script type="text/javascript">
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-1345454-11']);
-		_gaq.push(['_trackPageview']);
-
-		(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();
-	</script>
+<p>&nbsp;</p>
 </body>
 </html>

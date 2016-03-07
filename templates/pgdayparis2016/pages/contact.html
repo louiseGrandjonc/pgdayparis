@@ -1,43 +1,87 @@
 {% extends "pgdayparis2016/base.html" %}
 
-{% block menu %}
-  <div class="collapse" id="menu">
-    <ul>
-      <li><a href="{{linkbase|default:"http://2014.pgconf.eu/"}}">Home</a></li>
-      <li><a href="https://www.postgresql.eu/events/schedule/pgdayparis2016/">Programme</a></li>
-      <li><a href="{{linkbase|default:"http://2014.pgconf.eu/"}}callforpapers/">Appel à orateurs</a></li>
-      <li><a href="{{linkbase|default:"http://www.pgday.paris/"}}registration/">Inscription</a></li>
-      <li><a href="{{linkbase|default:"http://www.pgday.paris/"}}committee/">Comité de sélection</a></li>
-      <li><a href="{{linkbase|default:"http://2014.pgconf.eu/"}}sponsors/">Sponsors</a></li>
-      <li class="active"><a href="{{linkbase|default:"http://2014.pgconf.eu/"}}contact/">Contact</a></li>
-    </ul>
-  </div>
+{% block title %}Qui sommes nous ?{% endblock %}
+
+{% block content %}
+<h1>Qui sommes nous&nbsp;?</h1>
+
+<p>Le pgDay Paris est organisé par des membres de la communauté française de
+PostgreSQL, en partenariat avec <a href="#">PostgreSQL Europe</a>.</p>
+
+<p>N'hésitez pas à nous contacter à l'adresse <strong class="w3-text-theme">
+<a href="mailto:org@pgday.paris">org@pgday.paris</a></strong> si vous avez la
+moindre question concernant la conférence.</p>
+
+<h2 id="staff">Le staff</h2>
+
+<p>Les personnes responsables de l'organisation de cette conférence
+sont&nbsp;:</p>
+
+<div class="w3-row-padding">
+
+<div class="w3-third">
+    <div class="w3-container w3-center w3-text-theme">
+    <img src="{{mediabase|default:"http://www.pgday.paris/"}}static/img/logos/vik.jpg" height="200px" width="200px" />
+    <p><strong>Vik Fearing</strong><br/>2ndQuadrant France</p>
+    </div>
+</div>
+
+<div class="w3-third">
+    <div class="w3-container w3-center w3-text-theme">
+    <img src="{{mediabase|default:"http://www.pgday.paris/"}}static/img/logos/krol.jpg" height="200px" width="200px" />
+    <p><strong>Carole Arnaud</strong><br/>Dalibo</p>
+    </div>
+</div>
+
+<div class="w3-third">
+    <div class="w3-container w3-center w3-text-theme">
+    <img src="{{mediabase|default:"http://www.pgday.paris/"}}static/img/logos/louise.jpg" height="200px" width="200px" />
+    <p><strong>Louise Grandjonc</strong><br/>Ulule</p>
+    </div>
+</div>
+
+</div>
+
+<h2 id="committee">Le comité de sélection</h2>
+
+<p>Les responsables du contenu de cette édition sont&nbsp;:</p>
+
+<div class="w3-row-padding">
+    <div class="w3-third">
+        <div class="w3-container w3-center w3-text-theme">
+        <img src="{{mediabase|default:"http://www.pgday.paris/"}}static/img/logos/vik.jpg" height="200px" width="200px" />
+        <p><strong>Vik Fearing</strong><br/>2ndQuadrant France</p>
+        </div>
+    </div>
+    
+    <div class="w3-third">
+        <div class="w3-container w3-center w3-text-theme">
+        <img src="{{mediabase|default:"http://www.pgday.paris/"}}static/img/logos/grabounga.jpg" height="200px" width="200px" />
+        <p><strong>Gilles Souris</strong><br/>Novancia</p>
+        </div>
+    </div>
+    
+    <div class="w3-third">
+        <div class="w3-container w3-center w3-text-theme">
+        <img src="{{mediabase|default:"http://www.pgday.paris/"}}static/img/logos/romain.jpg" height="200px" width="200px" />
+        <p><strong>Romain Roiné</strong><br/>Webedia</p>
+        </div>
+    </div>
+</div>
+
+<div class="w3-row-padding">
+    <div class="w3-third">
+        <div class="w3-container w3-center w3-text-theme">
+        <img src="{{mediabase|default:"http://www.pgday.paris/"}}static/img/logos/arnaud.jpg" height="200px" width="200px" />
+        <p><strong>Arnaud Gambonnet</strong><br/>Consultat SI indépendant</p>
+        </div>
+    </div>
+    
+    <div class="w3-third">
+        <div class="w3-container w3-center w3-text-theme">
+        <img src="{{mediabase|default:"http://www.pgday.paris/"}}static/img/logos/krol.jpg" height="200px" width="200px" />
+        <p><strong>Carole Arnaud</strong><br/>Dalibo</p>
+        </div>
+    </div>
+</div>
 {% endblock %}
-
-{% block pgdaypariscontent %}
-  <section class="like-you">
-    <article class="col-sm-12 col-md-offset-1">
-      Vous pouvez à tout moment nous contacter à l'adresse mail suivante&nbsp;:
-      <b><a href="mailto:org@pgday.paris">org@pgday.paris</a></b>
-    </article>
- </section>
-
- <section class="like-you">
-      <article class="col-sm-12 col-md-offset-1 col-md-9">
-        <h2>Nous trouver</h2>
-         <p>
-          </br><span>44 boulevard de Vaugirard, 75015 PARIS</span>
-         </p>
-          <p>
-            Métro Montparnasse-Bienvenüe : lignes 4, 6, 12 ou 13
-            </br>
-            Métro Pasteur : lignes 12
-          </p>
-<iframe width="848" height="500" frameborder="0" scrolling="no"
-  marginheight="0" marginwidth="0"
-  src="http://cartosm.eu/map?lon=2.31650237729&lat=48.841138437741&zoom=13&width=848&height=500&mark=true&nav=true&pan=true&zb=inout&style=default&icon=down"></iframe>
-  <br/><div id="cartosmlink">
-    <a href="http://www.openstreetmap.org/?mlat=48.841138437741&mlon=2.31650237729&zoom=13&layers=M" style="text-align:left;">Voir sur une carte plus grande</a></div>
-      </article>
-    </section>
-{%endblock%}

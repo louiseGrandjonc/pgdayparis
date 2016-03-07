@@ -1,86 +1,68 @@
-{%extends "pgdayparis2016/base.html"%}
-{%block titlesuffix%}{%endblock%}
+{% extends "pgdayparis2016/base.html" %}
 
-{% block intro %}
-	<header class="cover">
-      <div class="layer">
-        <h1>PostgreSQL <small>Conférence <span>Paris</span> 2016</small></h1>
-        <div class="invite-scroll">
-          <a href="#content">
-            <i class="fa fa-angle-down"></i>
-          </a>
+{% block title %}Accueil{% endblock %}
+
+{% block content %}
+<div class="w3-container w3-center">
+<h1 class="pp-biolinum"><strong>pgDay Paris</strong></h1>
+<h2 class="pp-biolinum">31 mars 2016</h2>
+<h2 class="pp-biolinum">44 boulevard de Vaugirard<br/>Paris, France</h2>
+</div>
+<hr class="w3-theme"/>
+
+<div class="w3-row">
+<div class="w3-container w3-half w3-center">
+    <img src="{{mediabase|default:"http://www.pgday.paris/"}}static/img/logos/pgdayparis2016.png" style="width:100%;min-width:300px;max-width:400px" />
+</div>
+<div class="w3-container w3-half">
+    <p class="w3-left" style="text-align:left;">Le pgDay Paris est une journée
+    de conférences et d'échanges organisée par la communauté française et
+    européenne de PostgreSQL. C'est <em>le</em> rendez-vous annuel PostgreSQL
+    de la capitale. Vous y recontrerez entre autres des contributeurs majeurs
+    du projet, ainsi que des utilisateurs de tout niveau.</p>
+
+    <p>Que vous soyez administrateur, développeur, ou en étude de migration, il
+    y aura quelque chose pour vous au pgDay Paris 2016. Vous pouvez consulter
+    le programme de la journée en <a href="#">cliquant ici</a>.</p>
+
+    <p class="w3-center">
+    <a class="w3-btn w3-theme-action w3-round w3-animate-opacity" href="#">Je m'inscris&nbsp;!</a>
+    </p>
+    
+    <p>Pour cette deuxième édition, nous comptons sur la participation de 100 à
+    150 personnes. Ne tardez pas à prendre votre place&nbsp;!</p>
+</div>
+</div>
+
+<div class="w3-container w3-border w3-margin w3-center">
+<p>Nos partenaires&nbsp;:</p>
+<div class="w3-row-padding w3-margin-top">
+    <div class="w3-half">
+        <a href="{{linkbase|default:"http://www.pgday.paris/"}}sponsors/">
+        <div class="w3-card-2">
+        <img src="{{mediabase|default:"http://www.pgday.paris/"}}static/img/logos/logo_small_dalibo.png" style="max-width:200px;width:100%" />
         </div>
-      </div>
-    </header>
-{% endblock %}
-
-{% block pgdaypariscontent %}
-<section class="like-you">
-    <figure class="col-sm-12 col-md-7">
-        <img src="{{mediabase|default:"http://www.pgday.paris/"}}static/img/logos/pgdayparis2016.png" width="700" height="359" alt="pgDay Presentations">
-    </figure>
-
-    <article class="col-sm-11 col-md-5">
-      <h2>pgDay Paris<br/>le 31 mars 2016</h2>
-      <p>Le pgDay Paris est une journée de conférences et d'échanges organisée
-         par la communauté française et européenne de PostgreSQL.</p>
-      <p>L'édition 2016 se déroulera au siège social de la Poste&nbsp;:<br/>
-         <strong>44 boulevard de Vaugirard, 75015 PARIS</strong></p>
-      <p>Nous comptons sur la participation de 100 à 150 personnes. Les
-         inscriptions sont désormais ouvertes.
-         <strong><a href="https://www.postgresql.eu/events/register/pgdayparis2016/">Inscrivez-vous&nbsp;!</a></strong></p>
-    </article>
-</section>
-
-<section class="for-you">
-  <article class="col-sm-12 col-md-6">
-    <h2>pgDay Paris<br/>March 31st, 2016</h2>
-    <p>
-      pgDay Paris 2016 is an excellent chance to learn more about the world's
-      most advanced open source database among your peers in France. Whether
-      you use PostgreSQL as a DBA, an application developer, a sysadmin or a
-      devop; whether you are interested in resource and risk management or
-      technical details; pgDay Paris will have something for you.</p>
-    <p>
-      We are expecting between 100 and 150 people.  Registration is now open.
-      <strong><a href="https://www.postgresql.eu/events/register/pgdayparis2016/">Register Now!</a></strong></p>
-    <p>We hope to see you in Paris!</p>
-  </article>
-
-  <figure class="col-sm-12 col-md-6">
-    <img height="350" src="{{mediabase|default:"http://www.pgday.paris/"}}static/img/screens/international.jpg">
-  </figure>
-</section>
-
-<section class="like-you">
-    <article class="col-sm-12 col-md-offset-1 col-md-9">
-        <h2>Twitter</h2>
-        <div class="panel panel-default">
-		    <div class="panel-heading">
-			    <h4><small>Follow the <a href="http://twitter.com/hashtag/pgdayparis"><i class="fa fa-twitter"></i>
-				#pgdayparis Tweets</a> for the latest conference news</small></h4>
-			</div>
-            <a class="twitter-timeline" width="848" href="https://twitter.com/hashtag/pgdayparis"
-               data-widget-id="570233813276823552">#pgdayparis Tweets</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </a>
+    </div>
+    <div class="w3-half">
+        <a href="{{linkbase|default:"http://www.pgday.paris/"}}sponsors/">
+        <div class="w3-card-2">
+        <img src="{{mediabase|default:"http://www.pgday.paris/"}}static/img/logos/logo_small_loxodata.png" style="max-width:200px;width:100%" />
         </div>
-    </article>
-</section>
-{% endblock %}
+        </a>
+    </div>
+</div>
+<p>Pour plus d'informations, <a href="{{linkbase|default:"http://www.pgday.paris/"}}sponsors/">cliquez ici</a>.</p>
+</div>
 
-{% block extrascript %}
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="{{mediabase|default:"http://www.pgday.paris/"}}static/js/bootstrap.js"></script>
-  <script src="{{mediabase|default:"http://www.pgday.paris/"}}static/js/smoothscroll.js"></script>
-  <script src="{{mediabase|default:"http://www.pgday.paris/"}}static/js/svgreplace.js"></script>
-  <script>
-      $('#nav').affix({
-        offset: {
-          top: function () {
-            return (this.top = $('#nav').outerHeight())
-          },
-        }
-      })
-  </script>
+<div class="w3-container w3-padding w3-center">
+            <a class="twitter-timeline"  href="https://twitter.com/hashtag/pgDayParis" data-widget-id="705838319255592960">#pgDayParis Tweets</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+
+<hr class="w3-theme"/>
+
+<p class="w3-text-theme w3-center">Le <strong><span class="pp-biolinum">pgDay Paris 2016</span></strong>
+est organisé en partenariat avec
+<a href="http://www.postgresql.eu">PostgreSQL Europe</a>.</p>
 {% endblock %}

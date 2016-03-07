@@ -15,7 +15,7 @@ urlpatterns = patterns(
     (r'^news.json$', 'pgdayparis.base.views.newsjson'),
 
     # Admin for some models
-    (r'^admin/', include(admin.site.urls)),
+    #(r'^admin/', include(admin.site.urls)),
 
     # Static pages for everything else
     (r'^(.*)/$', 'pgdayparis.base.views.static_fallback'),

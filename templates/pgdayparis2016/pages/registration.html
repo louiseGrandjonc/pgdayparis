@@ -1,77 +1,33 @@
-{%extends "pgdayparis2016/base.html"%}
+{% extends "pgdayparis2016/base.html" %}
 
-{% block menu %}
-<div class="collapse" id="menu">
-  <ul>
-    <li><a href="{{linkbase|default:"http://www.pgday.paris/"}}">Home</a></li>
-    <li><a href="https://www.postgresql.eu/events/schedule/pgdayparis2016/">Programme</a></li>
-    <li><a href="{{linkbase|default:"http://www.pgday.paris/"}}callforpapers/">Appel à orateurs</a></li>
-    <li class="active"><a href="{{linkbase|default:"http://www.pgday.paris/"}}registration/">Inscription</a></li>
-    <li><a href="{{linkbase|default:"http://www.pgday.paris/"}}committee/">Comité de sélection</a></li>
-    <li><a href="{{linkbase|default:"http://www.pgday.paris/"}}sponsors/">Sponsors</a></li>
-    <li><a href="{{linkbase|default:"http://www.pgday.paris/"}}contact/">Contact</a></li>
-  </ul>
-</div>
+{% block title %}Inscriptions{% endblock %}
+
+{% block content %}
+<h1>Inscriptions</h1>
+
+<p>Le tarif du pgDay Paris 2016 est de seulement <strong>50&nbsp;€</strong>&nbsp;!</p>
+
+<a class="w3-btn w3-theme-action w3-round" href="#">Je m'inscris&nbsp;!</a>
+
+<h2>Frais d'inscription</h2>
+
+<p>Les frais d'inscription doivent être payés à l'avance. Une fois le paiement
+terminé, vous recevrez une copie PDF de votre reçu via e-mail, et il sera
+également disponible en téléchargement depuis la page d'inscription.<p>
+
+<p>Dès que celle-ci est confirmée, vous recevrez un e-mail. Ce mail est envoyé
+depuis <a href="mailto:org@pgday.paris">org@pgday.paris</a>. Par conséquent,
+assurez-vous d'ajouter cette adresse à votre carnet afin d'éviter que le mail
+ne soit considéré comme spam.</p>
+
+<p>Vous pouvez régler via carte (Mastercard, Visa, ou American Express),
+PayPal, ou virement bancaire. Attention, cette dernière option n'est plus
+disponible la semaine précédant la conférence pour des raisons de délai de
+traitement.</p>
+
+<!--p>Si vous êtes une société qui prend en charge les frais d'inscriptions d'un employé, vous
+pouvez <a href="#otherpayment">payer à sa place</a>. Si vous comptez payer pour
+plusieurs personnes, il est également possible d'effectuer un <a
+href="#bulk">paiement groupé</a>.<p-->
+
 {% endblock %}
-
-{% block pgdaypariscontent %}
-<section class="like-you">
-  <article class="col-sm-12 col-md-offset-1 col-md-9">
-    <h2>Les inscriptions sont à présent ouvertes&nbsp;!</h2>
-    <p>
-      Vous pouvez dès aujourd'hui vous <b><a href="https://www.postgresql.eu/events/register/pgdayparis2016/">inscrire</a></b>
-      pour venir au pgDay Paris le <emph>31 mars 2016</emph>&nbsp;! Le tarif est de <emph>50&nbsp;&euro;</emph>
-      par personne.
-    </p>
-    <p>
-      Pour connaître le programme du pgDay Paris, vous pouvez
-      vous référer à la partie dédiée sur le site&nbsp;: <a href="https://www.postgresql.eu/events/schedule/pgdayparis2016/">ici</a>
-    </p>
-    <p>
-      L'inscription inclut l'accès à toutes les conférences,
-      le repas, deux pauses cafés et (presque) tout le café
-      que vous pouvez boire en une journée.
-    </p>
-    <h2><b><a href="https://www.postgresql.eu/events/register/pgdayparis2016/">Je m'inscris&nbsp;!</a></b></h2>
-    <p>
-      Annulation&nbsp;:
-      <ul>
-        <li>Si vous devez annuler votre enregistrement après avoir payé, contactez-nous directement.</li>
-        <li>Si vous annulez au moins 4 semaines avant la conférence, l'intégralité du coût vous sera remboursé</li>
-        <li>Si vous annulez au moins 2 semaines avant la conférence, 50% du coût vous sera remboursé</li>
-        <li>Si vous annulez moins de 2 semaines avant la conférence, 25% du coût vous sera remboursé</li>
-        <li>Si vous annulez moins d'1 semaine avant la conférence, nous ne pourrons malheureusement pas vous rembourser</li>
-      </ul>
-    </p>
-  </article>
-</section>
-<section class="like-you">
-  <article class="col-sm-12 col-md-offset-1 col-md-9">
-    <h2>Registration is now open!</h2>
-    <p>
-      You can for now on <b><a href="https://www.postgresql.eu/events/register/pgdayparis2016/">register</a></b> to come to the pgDay Paris
-      the 31st of March 2016. The cost is of &euro;50 per person.
-    </p>
-    <p>
-      To know a bit more about the program of this pgDay you
-      can refer to the page dedicated to it
-      <a href="https://www.postgresql.eu/events/schedule/pgdayparis2016/">here</a>.
-    </p>
-    <p>
-      Registration includes access to all sessions, lunch, two
-      catered coffee breaks and (almost) all the coffee you
-      can drink in a day.
-    </p>
-    <h2><b><a href="https://www.postgresql.eu/events/register/pgdayparis2016/">Register Now!</a></b></h2>
-    <p>Cancellation policy:
-      <ul>
-        <li>If you need to cancel your registration after you have paid, please contact us for manual handling.</li>
-        <li>If you cancel at least 4 weeks before the conference, we will refund the full cost of the registration, minus any transaction fees.</li>
-        <li>If you cancel at least 2 weeks before the conference, we will refund 50% of the cost of the registration, minus any transaction fees.</li>
-        <li>If you cancel less than 2 weeks before the conference, we will refund 25% of the cost of the registration, minus any transaction fees.</li>
-        <li>If you cancel less than 1 week before the conference, we can unfortunately not provide you with a refund.</li>
-    </p>
-  </article>
-</section>
-
-{%endblock%}

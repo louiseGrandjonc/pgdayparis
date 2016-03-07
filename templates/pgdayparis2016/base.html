@@ -10,11 +10,28 @@
     <link rel="shortcut icon" href="{{mediabase|default:"http://www.pgday.paris/"}}static/img/logos/favicon.png" />
     <link rel="stylesheet" href="{{mediabase|default:"http://www.pgday.paris/"}}static/css/w3.css">
     <link rel="stylesheet" href="{{mediabase|default:"http://www.pgday.paris/"}}static/css/w3-theme-brown.css">
-    <link rel="stylesheet" href="{{mediabase|default:"http://www.pgday.paris/"}}static/css/linuxbiolinum.css">
 
 {%block extrahead%}{%endblock%}
 
 <style>
+    @font-face {
+        font-family: Biolinum;
+        src: url('{{mediabase|default:"http://www.pgday.paris/"}}static/fonts/LinuxLibertine/WOFF/LinBiolinum_R.woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: Biolinum;
+        src: url('{{mediabase|default:"http://www.pgday.paris/"}}static/fonts/LinuxLibertine/WOFF/LinBiolinum_RB.woff');
+        font-weight: bold;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: Biolinum;
+        src: url('{{mediabase|default:"http://www.pgday.paris/"}}static/fonts/LinuxLibertine/WOFF/LinBiolinum_RI.woff');
+        font-weight: normal;
+        font-style: italic;
+    }
     .pp-biolinum{font-family:Biolinum,Verdana,sans-serif;}
     .pgdayparis{font-family:Biolinum,Verdana,sans-serif;font-weight:bold;}
     div.sessblock a {color:#fff}

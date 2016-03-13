@@ -23,11 +23,16 @@ class PgConfContext(RequestContext):
 
 # URLs to redirect to dynamic pages
 redirects = {
-    'sessions': 'http://www.postgresql.eu/events/sessions/pgdayparis2016/',
-    'schedule': 'http://www.postgresql.eu/events/schedule/pgdayparis2016/',
-    'feedback': 'https://www.postgresql.eu/events/feedback/pgdayparis2016/',
-    'm': 'https://www.postgresql.eu/m/pgdayparis2016/',
-    'commitee': '/committee/',
+    'commitee':     '/qui-sommes-nous/',
+    'committee':    '/qui-sommes-nous/',
+    'contact':      '/qui-sommes-nous/',
+    'feedback':     'https://www.postgresql.eu/events/feedback/pgdayparis2016/',
+    'm':            'https://www.postgresql.eu/m/pgdayparis2016/',
+    'programme':    'http://www.postgresql.eu/events/schedule/pgdayparis2016/',
+    'registration': '/inscriptions/',
+    'schedule':     'http://www.postgresql.eu/events/schedule/pgdayparis2016/',
+    'sessions':     'http://www.postgresql.eu/events/sessions/pgdayparis2016/',
+    'venue':        '/comment-venir/',
 }
 
 

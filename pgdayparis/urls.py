@@ -10,7 +10,7 @@ from pgdayparis.base.feeds import NewsFeed
 
 urlpatterns = patterns(
     '',
-    (r'^$', 'pgdayparis.base.views.index'),
+    (r'^(?:(?P<year>[\d]+)/)?$', 'pgdayparis.base.views.index'),
     (r'^news.rss$', NewsFeed()),
     (r'^news.json$', 'pgdayparis.base.views.newsjson'),
 

@@ -112,3 +112,7 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Allow all host headers
 ALLOWED_HOSTS = ['*']
+
+PGDAY_YEARS = [2015, 2016]
+
+DEFAULT_YEAR = 2016

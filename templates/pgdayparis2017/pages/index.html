@@ -1,0 +1,73 @@
+{% extends "pgdayparis2017/base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="w3-container w3-center">
+<h1 class="pp-biolinum"><strong>pgDay Paris</strong></h1>
+<h2 class="pp-biolinum">March 23rd, 2017</h2>
+<h2 class="pp-biolinum"><!--a href="{{linkbase|default:"http://www.pgday.paris/"}}venue/"
+						   style="text-decoration:none"-->2<sup>bis</sup> rue Mercœur<!--/a--><br/>Paris, France</h2>
+</div>
+<hr class="w3-theme"/>
+
+<div class="w3-row">
+<div class="w3-container w3-half w3-center">
+    <img src="{{mediabase|default:"http://www.pgday.paris/"}}static/img/logos/pgdayparis2017.png" style="width:100%;min-width:300px;max-width:400px" />
+</div>
+<div class="w3-container w3-half">
+	<p class="w3-left">pgDay Paris 2017 is an excellent chance to learn more
+	about the world's most advanced open source database among your peers in
+	the Paris area. Whether you use PostgreSQL professionally or play with it
+	in your spare time; whether you love the new Full Text Search capabilities
+	or hack on query planner internals; pgDay Paris will have something for
+	you.</p>
+
+    <p class="w3-center">
+    <a class="w3-btn w3-theme-action w3-round w3-animate-opacity" href="https://www.postgresql.eu/events/register/pgdayparis2017/">Call for Papers Coming Soon!</a>
+    </p>
+
+	<p>For our third year, we are expecting between 80 and 150 people. Don't
+	miss out!</p>
+</div>
+</div>
+
+<div class="w3-container w3-border w3-margin w3-center">
+<!--p>Our Partner Sponsors:</p>
+<div class="w3-row-padding">
+    <div class="w3-third w3-margin-bottom">
+        <a href="{{linkbase|default:"http://www.pgday.paris/"}}sponsors/">
+        <div class="w3-card-2 w3-round">
+        <img src="{{mediabase|default:"http://www.pgday.paris/"}}static/img/logos/logo_small_dalibo_2017.png" style="max-width:200px;width:100%" />
+        </div>
+        </a>
+    </div>
+    <div class="w3-third w3-margin-bottom">
+        <a href="{{linkbase|default:"http://www.pgday.paris/"}}sponsors/">
+        <div class="w3-card-2 w3-round">
+        <img src="{{mediabase|default:"http://www.pgday.paris/"}}static/img/logos/logo_small_loxodata_2017.png" style="max-width:200px;width:100%" />
+        </div>
+        </a>
+    </div>
+    <div class="w3-third w3-margin-bottom">
+        <a href="{{linkbase|default:"http://www.pgday.paris/"}}sponsors/">
+        <div class="w3-card-2 w3-round">
+        <img src="{{mediabase|default:"http://www.pgday.paris/"}}static/img/logos/logo_small_2ndquadrant_2017.png" style="max-width:200px;width:100%" />
+        </div>
+        </a>
+    </div>
+</div-->
+<p>Interested in becoming a sponsor? <a href="{{linkbase|default:"http://www.pgday.paris/"}}sponsors/">Click Here!</a></p>
+</div>
+
+<div class="w3-container w3-padding w3-center">
+            <a class="twitter-timeline"  href="https://twitter.com/hashtag/pgDayParis" data-widget-id="705838319255592960">#pgDayParis Tweets</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+
+<hr class="w3-theme"/>
+
+<p class="w3-text-theme w3-center"><strong><span class="pp-biolinum">pgDay Paris</span></strong>
+is organized in association with
+<a href="http://www.postgresql.eu">PostgreSQL Europe</a>.</p>
+{% endblock %}

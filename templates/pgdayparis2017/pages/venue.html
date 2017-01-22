@@ -1,0 +1,22 @@
+{% extends "pgdayparis2017/base.html" %}
+
+{% block title %}Venue{% endblock %}
+
+{% block content %}
+<h1>Venue</h1>
+
+<p>The conference this year will be held at IRIS (<i>Institut des Relations
+Internationales et Stratégiques</i>), <b>2bis rue Mercœur, 75011 Paris</b>.</p>
+
+<div class="w3-card-8 w3-margin">
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+    <div style='overflow:hidden;height:440px;width:100%;'>
+      <div id='gmap_canvas' style='height:440px;width:100%;'></div>
+      <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+    </div>
+
+    <script type='text/javascript'>function init_map(){var myOptions = {zoom:13,center:new google.maps.LatLng(48.8567221,2.3806757),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(48.8567221,2.3806757)});infowindow = new google.maps.InfoWindow({content:'<strong>pgDay Paris 2017</strong><br>2bis rue Mercœur, Paris<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+</div>
+
+</div>
+{% endblock %}

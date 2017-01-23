@@ -1,0 +1,200 @@
+{% extends "pgdayparis2017/base.html" %}
+
+{% block title %}Registration{% endblock %}
+
+{% block extrahead %}
+<style>
+table {
+    border-collapse: collapse;
+}
+table, tr, th, td {
+    border: 1px solid black;
+    padding: 0.25em;
+}
+.tickettype, .ticketdescr {
+    text-align: left;
+}
+.ticketprice {
+    text-align: center;
+}
+</style>
+
+{% endblock %}
+
+{% block content %}
+<h1>Registration</h1>
+
+<div class="w3-row">
+<div class="w3-container w3-half">
+    <table>
+        <tr class="w3-theme">
+            <th class="tickettype">Ticket Type</th>
+            <th class="ticketprice">Price</th>
+            <th class="ticketdescr">Description</th>
+        </tr>
+        <tr>
+            <td class="tickettype">Early Bird</td>
+            <td class="ticketprice">€50</td>
+            <td class="ticketdescr">40 tickets available until 2017-02-21 &mdash;
+                use code <strong>EARLYBIRD</strong> during checkout</td>
+        </tr>
+        <tr class="w3-theme-l5">
+            <td class="tickettype">Normal</td>
+            <td class="ticketprice">€75</td>
+            <td class="ticketdescr"></td>
+        </tr>
+        <tr>
+            <td class="tickettype">Community Sponsor</td>
+            <td class="ticketprice">€150</td>
+            <td class="ticketdescr">For anyone who wants to support PostgreSQL a
+                little extra</td>
+        </tr>
+        <tr>
+            <td class="tickettype">Speaker</td>
+            <td class="ticketprice"><i>Free</i></td>
+            <td class="ticketdescr">Available to all confirmed speakers</td>
+        </tr>
+    </table>
+    
+    <p>All prices <a href="#vat">include VAT</a>.</p>
+    
+    <p class="w3-center">
+    <a class="w3-btn w3-theme-action w3-round w3-animate-opacity"
+       href="https://www.postgresql.eu/events/register/pgdayparis2017/"
+       >Register Now!</a>
+    </p>
+</div>
+
+<div class="w3-half">
+    <div class="w3-container w3-round w3-card w3-leftbar w3-note-theme w3-border-theme" style="width:100%;max-width:600px">
+        <p>A free <em>postgresql.org</em> account is required for each person
+        wishing to register. If you do not have an account, you will be able
+        to create one during the registration process.</p>
+    </div>
+</div>
+</div>
+
+<h2>Registration fee</h2>
+
+<p>The registration fee depends on the type of registration. It must be paid in
+advance using one of the approved methods. Once your payment has completed, you
+will receive a PDF copy of your receipt using email, and it will also be
+available for download on the registration page.</p>
+
+<p>Once your registration and payment have been confirmed, you will receive a
+confirmation email. The email is sent from <a
+href="mailto:org@pgday.paris">org@pgday.paris</a>, so make sure to add it to
+your contacts list to avoid it reaching your spam folder.</p>
+
+<p>You can pay using Credit Card (Mastercard, Visa or American Express),
+PayPal, Trustly or IBAN bank transfer (bank transfer is not available close to
+deadlines due to processing times).</p>
+
+<p>If you have a company department making the payments, please see the section
+on <a href="#otherpayment">paying somebody else's invoice</a>.  If you plan to
+register many attendees to be paid for by the same person, we also offer <a
+href="#bulk">bulk payment</a>.</p>
+
+<span class="anchor" id="community-sponsor"></span>
+<h3>Community Sponsor</h3>
+<p>We have had multiple requests for a more expensive ticket which sponsors the
+community (sometimes called <i>Business ticket</i>), so we have added one for
+you. The ticket does not include anything more than the <i>Normal</i> ticket,
+except perhaps a warm fuzzy feeling.</p>
+
+<h3>What's included</h3>
+<p>Included in all registrations is access to all sessions, lunch, two catered
+coffee breaks and (almost) all the coffee you can drink in a day.</p>
+
+<span class="anchor" id="vat"></span>
+<h3>VAT</h3>
+<p>PostgreSQL Europe is since 2016 VAT registered in France, all registrations
+will include 20% VAT.</p>
+
+<h3>Cancellation</h3>
+<p>If you need to cancel your registration after you have paid, please contact
+us for manual handling.  The refund we can offer depends on when you cancel so
+please cancel as soon as you know you won't be able to make it to the event.
+The available refund levels are:</p>
+<ul>
+    <li><strong>more than 4 weeks before the conference:</strong>
+        the full cost of the registration, minus any transaction fees, is
+        refunded.</li>
+    <li><strong>4 to 2 weeks before the conference:</strong>
+        50% of the cost of the registration, minus any transaction fees, is
+        refunded.</li>
+    <li><strong>less than 2 weeks before the conference:</strong>
+        25% of the cost of the registration, minus any transaction fees, is
+        refunded</li>
+    <li><strong>less than 1 week before the conference:</strong>
+        no refund is possible, unfortunately</li>
+</ul>
+
+<span class="anchor" id="otherpayment"></span>
+<h3>Paying somebody else's invoice</h3>
+<p>If you need to make a registration where somebody else (such as a company
+finance department) makes the payment, this is of course also possible. In this
+scenario, make sure that you follow this process:</p>
+<ol>
+  <li>The person <em>attending the conference</em> makes and completes
+    the registration form logged in using their personal account.</li>
+  <li>Once the registration details are filled out, proceed to
+    generate the invoice for the registration.</li>
+  <li>Once the invoice is generated, there will be a field at the
+    bottom of the invoice specification labeled <i>External link</i>.
+    This link should be sent to the person paying the invoice.</li>
+  <li>The person paying the invoice can then access the invoice using
+    this link without logging in, and proceed to make the payment
+    using any of the payment methods listed above.</li>
+</ol>
+
+<span class="anchor" id="bulk"></span>
+<h3>Bulk payment</h3>
+
+<p>We also have a bulk payment system available for those who wish to register
+multiple attendees and pay on a single invoice. This system is intended for
+companies who wish to send many employees or vendors/providers who wish to pay
+for their customers to attend the conference. As it includes more steps, it is
+recommended that the regular registration process is used when possible.</p>
+
+<p>To use the bulk payment system, please follow the following process:</p>
+<ol>
+  <li>Each <i>individual attendee</i> uses the regular <a
+      href="https://www.postgresql.eu/events/register/nordicpgday2017/">
+      registration form</a> to register. This step is necessary since the
+      connected account is used in all communication with the attendee,
+      including participating in events and feedback.  For this reason, it is
+      important that each attendee <em>register themselves</em>, so they get
+      access to all the features during the conference. <b>The attendee should
+      <em>not</em> proceed to payment of the registration.</b></li>
+  <li>The person in charge of payment (who does not need to be one of the
+      attendees, but can be) proceeds to <a
+      href="https://www.postgresql.eu/events/bulkpay/nordicpgday2017/"> the
+      bulk payment page</a>, and fills in the invoicing details.</li>
+  <li>The person in charge of payment fills in all the email addresses for the
+      attendees to pay for on this page, validates that the total cost is
+      correct, and generates an invoice.  Generating the invoice locks all
+      registrations against modifications, but just as with regular
+      registrations they are not confirmed until the invoice is paid.</li>
+  <li>The person in charge of payment pays the invoice using one of the
+      approved payment methods listead above. <em>Only</em> these payment
+      methods are accepted. Also note that the invoice is <em>due on
+      receipt</em> just like all other registrations.  If you cannot pay using
+      any of these methods, please <a href="/contact/">contact us</a> <em>ahead
+      of time</em> to work out the details.</li>
+  <li>When the invoice is paid in the system, all attached registrations will
+      automatically be confirmed, and the attendees will receive a confirmation
+      email. Only the person in charge of payment will receive a PDF copy of
+        the receipt for the transaction.</li>
+</ol>
+
+<p>If you have any questions on the bulk payment procedure or registration in
+general, don't hesitate to <a href=/contact/">contact us</a>.</p>
+
+<p class="w3-center">
+<a class="w3-btn w3-theme-action w3-round w3-animate-opacity"
+   href="https://www.postgresql.eu/events/register/pgdayparis2017/"
+   >Register Now!</a>
+</p>
+
+{% endblock %}

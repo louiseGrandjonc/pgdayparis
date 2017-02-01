@@ -12,6 +12,69 @@
      <link>http://2017.pgday.paris/blog#announcing-pgday-paris-2017</link>
      <guid>http://2017.pgday.paris/blog#announcing-pgday-paris-2017</guid>
      <pubDate>Wed, 1 Feb 2017 00:00:00 UTC</pubDate>
+	 <description>
+		 <![CDATA[
+    <p><a href="/2017/">pgDay Paris
+        2017</a> is the third annual one-day, one-track PostgreSQL conference,
+    held in Paris, France. This year's conference is planned for <time
+        datetime="2017-03-23">March 23rd, 2017</time>.</p>
+
+    <p>This year, all presentations are in English in order to bring to Paris
+    the very best of the international community and to show how PostgreSQL is
+    used around the globe.</p>
+
+    <p>Here is what you'll see at pgDay Paris 2017:</p>
+    <ul>
+        <li><p><strong>A PostgreSQL DBAs Toolbelt for 2017</strong></p>
+            <p><em>Kaarel Moppel</em>, a consultant from Austrian PostgreSQL
+            company Cybertec, takes us on a tour of handy tools and scripts
+            that every DBA should know about.</p></li>
+        <li><p><strong>Corruption War Stories</strong></p>
+            <p><em>Christophe Pettus</em>, CEO of American company PostgreSQL
+            Experts, shares with us his experiences with data corruption and
+            how he was able to overcome it.</p></li>
+        <li><p><strong>Can't imagine what a newbie can do with PostgreSQL on
+                Linux in a month</strong></p>
+            <p><em>Sylvie Aune</em>, from SA InfoConsulting, shows us how easy
+            getting up to speed with PostgreSQL can be. A must-see for
+            newbies!</p></li>
+        <li><p><strong>Measuring and Reducing PostgreSQL Transaction Latency</strong></p>
+            <p><em>Fabien Coehlo</em>, a professor at L'École des Mines de
+            Paris, walks us through transaction latency causes and
+            solutions.</p></li>
+        <li><p><strong>A look at the Elephants trunk - PostgreSQL 10</strong></p>
+            <p><em>Magnus Hagander</em>, member of the PostgreSQL Core Team,
+            code committer, and president of PostgreSQL Europe, highlights all
+            the new features of the upcoming version 10.</p></li>
+        <li><p><strong>Infrastructure Monitoring with Postgres</strong></p>
+            <p><em>Steven Simpson</em>, a software engineer at StackHPC,
+            questions the need for &quot;specialized&quot; databases and
+            demonstrates that a single PostgreSQL instance is capable of
+            handling large amounts of data.</p></li>
+        <li><p><strong>MLS PostgreSQL - Implementing Multi-level Security in
+                PostgreSQL with RLS and SELinux</strong></p>
+            <p><em>Joe Conway</em>, VP of PostgreSQL Engineering at American
+            company Crunchy Data Solutions and code committer, breaks down how
+            to properly secure your PostgreSQL installation from top to
+            bottom.</p></li>
+        <li><p><strong>Replication &amp; Recovery in PostgreSQL 10.0</strong></p>
+            <p><em>Simon Riggs</em>, CTO of international company 2ndQuadrant
+            and code committer, unveils the much anticipated new logical
+            replication.</p></li>
+    </ul>
+
+    <p>As always, the hallway track is where you get to meet and talk to both
+    PostgreSQL experts and users!</p>
+
+    <p>See full descriptions of both the presentations and the speakers <a
+        href="/2017/schedule/">here</a>,
+    and don't forget to <em><a
+        href="/2017/registration/">register</a></em>!</p>
+
+    <p>For all the latest news and information, <a
+        href="https:/www.twitter.com/pgDayParis">follow us on Twitter</a>.</p>
+		 ]]>
+	 </description>
    </item>
 </channel>
 </rss>

@@ -1,4 +1,7 @@
 # Django settings for pgdayparis project.
+import os
+
+PROJECT_PATH = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), os.pardir))
 
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
@@ -88,6 +91,32 @@ TEMPLATE_DIRS = (
     './templates',
 )
 
+TEMPLATES = [
+    {
+        "BACKEND": "django_jinja.backend.Jinja2",
+        'DIRS': {
+            os.path.join(PROJECT_PATH, 'templates'),
+        },
+        "OPTIONS": {
+            "match_extension": ('.html', ),
+            'extensions': [
+                "jinja2.ext.do",
+                "jinja2.ext.loopcontrols",
+                "jinja2.ext.with_",
+                "jinja2.ext.i18n",
+                "jinja2.ext.autoescape",
+
+                "django_jinja.builtins.extensions.CsrfExtension",
+                "django_jinja.builtins.extensions.CacheExtension",
+                "django_jinja.builtins.extensions.TimezoneExtension",
+                "django_jinja.builtins.extensions.UrlsExtension",
+                "django_jinja.builtins.extensions.StaticFilesExtension",
+                "django_jinja.builtins.extensions.DjangoFiltersExtension",
+            ]
+        }
+    }
+]
+
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -95,6 +124,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.admin',
     'django.contrib.staticfiles',
+    'django_jinja',
     'pgdayparis',
     'pgdayparis.base',
 )

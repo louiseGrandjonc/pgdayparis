@@ -43,7 +43,7 @@ def get_redirects(year):
     'm':            'https://www.postgresql.eu/m/pgdayparis%d/' % year,
     'programme':    'http://www.postgresql.eu/events/schedule/pgdayparis%d/' % year,
     #'registration': '/%d/inscriptions/' % year,
-    'schedule':     'http://www.postgresql.eu/events/schedule/pgdayparis%d/' % year,
+    #'schedule':     'http://www.postgresql.eu/events/schedule/pgdayparis%d/' % year,
     'sessions':     'http://www.postgresql.eu/events/sessions/pgdayparis%d/' % year,
 }
 

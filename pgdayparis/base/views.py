@@ -39,7 +39,7 @@ def get_redirects(year):
     return {
     'commitee':     '/%d/qui-sommes-nous/' % year,
     'committee':    '/%d/qui-sommes-nous/' % year,
-    'feedback':     'https://www.postgresql.eu/events/feedback/pgdayparis/%d' % year,
+    'feedback':     'https://www.postgresql.eu/events/feedback/pgdayparis%d' % year,
     'm':            'https://www.postgresql.eu/m/pgdayparis%d/' % year,
     'programme':    'http://www.postgresql.eu/events/schedule/pgdayparis%d/' % year,
     #'registration': '/%d/inscriptions/' % year,

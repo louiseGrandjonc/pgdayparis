@@ -1,0 +1,14 @@
+{% extends "pgdayparis2018/base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <header id="main-header">
+		<div><img id="main-logo" src="{{mediabase|default:"http://www.pgday.paris/"}}static/img/logos/pgday_paris_2018_white.png"></div>
+      <p id="date-place">
+        <time datetime="2018-03-15">March 15, 2018</time><br>
+        199<sup>bis</sup> rue Saint-Martin
+      </p>
+      <small><a href="mailto:contact@pgday.paris">contact@pgday.paris</a></small>
+    </header>
+{% endblock %}
